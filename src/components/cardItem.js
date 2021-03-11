@@ -17,7 +17,7 @@ const CardItem = ({title, text}) => {
                 <Card.Img variant="top" src={cardImage} className="card_image"/>
                 <Card.Body>
                     <Card.Title className="text_title">{title.toUpperCase()}</Card.Title>
-                    <div className="gorizontal_line"></div>
+                    <div className="horizontal_line"/>
                     <Card.Text>{text}</Card.Text>
                 </Card.Body>
         </Nav.Link>

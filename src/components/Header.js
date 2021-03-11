@@ -4,7 +4,7 @@ import {commonIcons} from "../resources/images"
 
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" className="container mt-3">
+        <Navbar collapseOnSelect expand="lg" className="container mt-3 mb-3">
             <Navbar.Brand className="justify-content-start" href="/"><Image src={commonIcons.remedyIcon}/></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">

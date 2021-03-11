@@ -2,19 +2,16 @@ import * as React from "react";
 import MainContent from '../components/mainPageContent'
 
 import MainPageTemplate from "../components/MainPageTemplate"
-import {Col, Container, Row} from "react-bootstrap"
+import {Container} from "react-bootstrap"
 
 const IndexPage = () => {
-  return (
-      <Container fluid>
-              <MainPageTemplate/>
-      <MainContent />
-      <main style={pageStyles}>
-    </main>
-      </Container>
-    <>
- 
-  )
+    return (
+        <Container fluid>
+            <MainPageTemplate>
+                <MainContent/>
+            </MainPageTemplate>
+        </Container>
+    )
 }
 
 export default IndexPage

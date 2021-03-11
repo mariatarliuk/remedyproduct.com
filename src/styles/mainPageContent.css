@@ -23,7 +23,7 @@ a:hover {
 }
 
 .main_content {
-    background-image: url('../images/blue_background.svg');
+    background-image: url('../images/backgrounds/blue_background.svg');
     width: 100%;
     position: relative;
     z-index: 200;
@@ -46,7 +46,7 @@ a:hover {
     margin-bottom: 1em;
 }
 
-.gorizontal_line {
+.horizontal_line {
     margin-top: 16px;
     padding-top: 16px;
     border-top: 2px solid #acccfb;
@@ -70,7 +70,7 @@ a:hover {
     height: 20%;
     border-bottom: 7px solid #acccfb;
     background-color: #5a9af9;
-    background-image: url('../images/blue_background.svg');
+    background-image: url('../images/backgrounds/blue_background.svg');
 }
 
 .background_bottom {
@@ -90,7 +90,7 @@ a:hover {
         padding-left: 60px;
         flex-direction: column;
     }
-    
+
     .card-deck .card_container {
         margin-bottom: 40px;
     }
