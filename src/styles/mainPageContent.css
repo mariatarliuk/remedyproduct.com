@@ -82,7 +82,7 @@ a:hover {
     background-color: #f1f6ff;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
 
     .card-deck {
         padding-right: 60px;
@@ -111,7 +111,7 @@ a:hover {
     }
 
     .background_top {
-        top: 0%;
+        top: 0;
     }
 
     .blue_back_text {
