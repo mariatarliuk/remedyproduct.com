@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, CardDeck } from 'react-bootstrap';
+import { Container, Row, Col, CardDeck, Nav, Image } from 'react-bootstrap';
 import '../styles/mainPageContent.css';
 import CardItem from './cardItem';
+import {learnMoreIcons} from "../resources/images.js"
 
 const MainContent = () => {
     const items = [
@@ -25,8 +26,30 @@ const MainContent = () => {
 
     return (
         <div className="main_container">
+            <div className="main_title">
+                <Container>
+                    <Row>
+                        <Col className="main_text">
+                            Remedy product studio is a product partner
+                        </Col>
+                    </Row>
+                    <Row className="links_work">
+                        <Col>
+                            <Nav.Link href="mailto:Hello@remedyproduct.com" className="link_text">Work with us</Nav.Link>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Nav.Link href="#learn_more" className="arrow_link">
+                                <Image src={learnMoreIcons.arrow} alt="arrow"/>
+                            </Nav.Link>
+                        </Col>
+                    </Row>
+                </Container>
+                {/* <div className="main_bg"></div> */}
+            </div>
             <div className="main_content">
-                <Container id="learnMore">
+                <Container id="learn_more">
                     <Row>
                         <Col className="blue_back_text">
                             Supporting founders and established companies in creating the next generation of great digital products
@@ -42,9 +65,9 @@ const MainContent = () => {
                         ))}
                     </CardDeck>
                 </Container>
+                <div className="background_top"/>
+                <div className="background_bottom"/>
             </div>
-            <div className="background_top"/>
-            <div className="background_bottom"/>
         </div>
     )
 }

@@ -10,6 +10,66 @@ a:hover {
     color: #000;
 }
 
+.main_title {
+    height: 82vh;
+    position: relative;
+}
+
+.main_text {
+    max-width: 70%;
+    padding-top: 5%;
+    min-height: 40vh;
+    font-size: 68px;
+    line-height: 133%;
+    margin-top: 25px;
+    letter-spacing: 0.003em;
+    margin-bottom: 25px;
+    z-index: 100;
+}
+
+.links_work {
+    position: relative;
+    z-index: 100;
+    height: 25vh;
+}
+
+.arrow_link {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.link_text {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fe9797;
+    border-radius: 5px;
+    color: #110835;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.link_text:hover {
+    background-color: #fe9797;  
+    color: #fff;
+}
+
+.main_bg {
+    background-image: url('../images/backgrounds/main_bg.svg');
+    width: 80%;
+    height: 106%;
+    position: absolute;
+    top: -20%;
+    z-index: 1;
+    right: -1%;
+}
+
 .blue_back_text {
     margin-top: 0px;
     padding: 60px 0 55px 0;
@@ -41,6 +101,10 @@ a:hover {
     box-shadow: 0 0 25px 15px #00000026;
 }
 
+.card_block {
+    position: relative;
+}
+
 .card_image {
     height: 60px;
     margin-bottom: 1em;
@@ -65,7 +129,7 @@ a:hover {
     position: absolute;
     z-index: 1;
     left: 0%;
-    top: 35%;
+    top: 0%;
     width: 100%;
     height: 20%;
     border-bottom: 7px solid #acccfb;
@@ -83,6 +147,9 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
+    .links_work {
+        height: 20vh;
+    }
 
     .card-deck {
         padding-right: 60px;
@@ -95,12 +162,14 @@ a:hover {
         margin-bottom: 40px;
     }
 
-    .background_top {
-        top: 16%;
+    .main_text {
+        width: 100%;
+        font-size: 50px;
     }
 
     .background_bottom {
         bottom: 5%;
+        height: 88%;
     }
 }
 
@@ -112,6 +181,11 @@ a:hover {
 
     .background_top {
         top: 0;
+    }
+
+    .main_text {
+        margin-top: 75px;
+        font-size: 40px;
     }
 
     .blue_back_text {
