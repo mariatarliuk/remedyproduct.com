@@ -1,16 +1,15 @@
 import * as React from "react";
 import MainContent from '../components/mainPageContent'
-
 import MainPageTemplate from "../components/MainPageTemplate"
-import {Container} from "react-bootstrap"
+import "../styles/index.css"
 
 const IndexPage = () => {
     return (
-        <Container fluid>
+        <>
             <MainPageTemplate>
                 <MainContent/>
             </MainPageTemplate>
-        </Container>
+        </>
     )
 }
 

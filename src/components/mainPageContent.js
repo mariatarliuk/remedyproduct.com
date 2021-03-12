@@ -26,7 +26,7 @@ const MainContent = () => {
     return (
         <div className="main_container">
             <div className="main_content">
-                <Container>
+                <Container id="learnMore">
                     <Row>
                         <Col className="blue_back_text">
                             Supporting founders and established companies in creating the next generation of great digital products
@@ -43,7 +43,7 @@ const MainContent = () => {
                     </CardDeck>
                 </Container>
             </div>
-            <div class="background_top"/>
+            <div className="background_top"/>
             <div className="background_bottom"/>
         </div>
     )
