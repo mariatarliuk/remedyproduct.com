@@ -5,12 +5,12 @@ import {learnMoreIcons} from "../resources/images"
 
 const CardItem = ({title, text, image}) => {
     return (
-        <Card className="card_container">
+        <Card className="cardContainer">
             <Nav.Link href="/">
-                <Card.Img variant="top" src={image} className="card_image"/>
+                <Card.Img variant="top" src={image} className="cardImage"/>
                 <Card.Body>
-                    <Card.Title className="text_title">{title.toUpperCase()}</Card.Title>
-                    <div className="horizontal_line"/>
+                    <Card.Title className="textTitle">{title.toUpperCase()}</Card.Title>
+                    <div className="horizontalLine"/>
                     <Card.Text>{text}</Card.Text>
                 </Card.Body>
         </Nav.Link>
