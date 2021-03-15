@@ -9,16 +9,19 @@ const MainContent = () => {
         {
             id: 1,
             title: 'startups',
+            image: learnMoreIcons.startups,
             text: 'For startups, RPS helps with overall strategy to assist founders with building and taking their products to market.',
         },
         {
             id: 2,
             title: 'enterprise',
+            image: learnMoreIcons.enterprise,
             text: 'For enterprise companies, RPS applies their startup expertise to implement nimble digital transformations.',
         },
         {
             id: 3,
             title: 'investment',
+            image: learnMoreIcons.investment,
             text: 'RPS invests in select companies across industries. You can find investment criteria here.',
         },
     ]
