@@ -28,22 +28,22 @@ const MainContent = () => {
 
 
     return (
-        <div className="main_container">
-            <div className="main_title">
+        <div className="mainContainer">
+            <div className="mainTitle">
                 <Container>
                     <Row>
-                        <Col className="main_text">
+                        <Col className="mainText">
                             Remedy product studio is a product partner
                         </Col>
                     </Row>
-                    <Row className="links_work">
+                    <Row className="linksWork">
                         <Col>
                             <Nav.Link href="mailto:Hello@remedyproduct.com" className="link_text">Work with us</Nav.Link>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <Nav.Link href="#learn_more" className="arrow_link">
+                            <Nav.Link href="#learn_more" className="arrowLink">
                                 <Image src={learnMoreIcons.arrow} alt="arrow"/>
                             </Nav.Link>
                         </Col>
@@ -51,16 +51,16 @@ const MainContent = () => {
                 </Container>
                 {/* <div className="main_bg"></div> */}
             </div>
-            <div className="main_content">
+            <div className="mainContent">
                 <Container id="learn_more">
                     <Row>
-                        <Col className="blue_back_text">
+                        <Col className="blueBackText">
                             Supporting founders and established companies in creating the next generation of great digital products
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <div className="card_block">
+            <div className="cardBlock">
                 <Container>
                     <CardDeck>
                         {items.map(item => (
@@ -68,8 +68,8 @@ const MainContent = () => {
                         ))}
                     </CardDeck>
                 </Container>
-                <div className="background_top"/>
-                <div className="background_bottom"/>
+                <div className="backgroundTop"/>
+                <div className="backgroundBottom"/>
             </div>
         </div>
     )
