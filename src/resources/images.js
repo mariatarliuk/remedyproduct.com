@@ -32,6 +32,11 @@ import walkliIntro from "../images/pictures/walkli-intro.png"
 import b6aCeoAvatar from "../images/avatars/b6a-ceo-avatar.png"
 import walkliCeoAvatar from "../images/avatars/walkli-ceo-avatar.png"
 
+import investment from '../images/icons/learn-more-icons/investment.svg';
+import enterprise from '../images/icons/learn-more-icons/enterprise.svg';
+import startups from '../images/icons/learn-more-icons/startups.svg';
+import arrow from '../images/icons/learn-more-icons/arrow.svg'
+
 export const commonIcons = {
     remedyIcon: remedyIcon
 }
@@ -74,4 +79,11 @@ export const productsLogo = {
     walkliLogo: walkliLogo,
     mbaMissionLogo: mbaMissionLogo,
     classpassLogo: classpassLogo,
+}
+
+export const learnMoreIcons = {
+    investment,
+    enterprise,
+    startups,
+    arrow
 }
