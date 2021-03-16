@@ -10,7 +10,67 @@ a:hover {
     color: #000;
 }
 
-.blue_back_text {
+.mainTitle {
+    height: 82vh;
+    position: relative;
+}
+
+.mainText {
+    max-width: 70%;
+    padding-top: 5%;
+    min-height: 40vh;
+    font-size: 68px;
+    line-height: 133%;
+    margin-top: 25px;
+    letter-spacing: 0.003em;
+    margin-bottom: 25px;
+    z-index: 100;
+}
+
+.linksWork {
+    position: relative;
+    z-index: 100;
+    height: 25vh;
+}
+
+.arrowLink {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.linkText {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fe9797;
+    border-radius: 5px;
+    color: #110835;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.linkText:hover {
+    background-color: #fe9797;
+    color: #fff;
+}
+
+.mainBg {
+    background-image: url('../images/backgrounds/main_bg.svg');
+    width: 80%;
+    height: 106%;
+    position: absolute;
+    top: -20%;
+    z-index: 1;
+    right: -1%;
+}
+
+.blueBackText {
     margin-top: 0px;
     padding: 60px 0 55px 0;
     color: #fff;
@@ -18,18 +78,18 @@ a:hover {
     line-height: 150%;
 }
 
-.main_container {
+.mainContainer {
     position: relative;
 }
 
-.main_content {
+.mainContent {
     background-image: url('../images/backgrounds/blue_background.svg');
     width: 100%;
     position: relative;
     z-index: 200;
 }
 
-.card_container {
+.cardContainer {
     box-shadow: 0 0 15px 4px #353b6426;
     text-align: center;
     z-index: 100;
@@ -37,22 +97,26 @@ a:hover {
     transition: .6s;
 }
 
-.card_container:hover {
+.cardContainer:hover {
     box-shadow: 0 0 25px 15px #00000026;
 }
 
-.card_image {
+.cardBlock {
+    position: relative;
+}
+
+.cardImage {
     height: 60px;
     margin-bottom: 1em;
 }
 
-.horizontal_line {
+.horizontalLine {
     margin-top: 16px;
     padding-top: 16px;
     border-top: 2px solid #acccfb;
 }
 
-.text_title {
+.textTitle {
     font-size: 30px;
     font-weight: 400;
 }
@@ -61,11 +125,11 @@ a:hover {
     text-align: left;
 }
 
-.background_top {
+.backgroundTop {
     position: absolute;
     z-index: 1;
     left: 0%;
-    top: 35%;
+    top: 0%;
     width: 100%;
     height: 20%;
     border-bottom: 7px solid #acccfb;
@@ -73,7 +137,7 @@ a:hover {
     background-image: url('../images/backgrounds/blue_background.svg');
 }
 
-.background_bottom {
+.backgroundBottom {
     position: absolute;
     left: 0%;
     bottom: -5%;
@@ -83,6 +147,9 @@ a:hover {
 }
 
 @media screen and (max-width: 991px) {
+    .linksWork {
+        height: 20vh;
+    }
 
     .card-deck {
         padding-right: 60px;
@@ -91,16 +158,18 @@ a:hover {
         flex-direction: column;
     }
 
-    .card-deck .card_container {
+    .card-deck .cardContainer {
         margin-bottom: 40px;
     }
 
-    .background_top {
-        top: 16%;
+    .mainText {
+        width: 100%;
+        font-size: 50px;
     }
 
-    .background_bottom {
+    .backgroundBottom {
         bottom: 5%;
+        height: 88%;
     }
 }
 
@@ -110,11 +179,16 @@ a:hover {
         padding-left: 10px;
     }
 
-    .background_top {
+    .backgroundTop {
         top: 0;
     }
 
-    .blue_back_text {
+    .mainText {
+        margin-top: 75px;
+        font-size: 40px;
+    }
+
+    .blueBackText {
         font-size: 22px;
         line-height: 130%;
         padding: 60px 20px 55px 20px;
