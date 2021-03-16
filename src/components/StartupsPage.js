@@ -67,7 +67,7 @@ const StartupsPage = () => {
 
     return (
         <>
-        <div className="mainBg">
+        <div className="mainBgStartups">
             <Container >
                 <Row className="container-fluid d-flex flex-wrap justify-content-center">
                     <Col className="titleText pt-5 pb-5">
