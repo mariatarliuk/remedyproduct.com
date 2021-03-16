@@ -1,7 +1,3 @@
-body {
-    font-family: Camphorpro, sans-serif;
-}
-
 a {
     color: #000;
 }
@@ -56,7 +52,7 @@ a:hover {
 }
 
 .linkText:hover {
-    background-color: #fe9797;  
+    background-color: #fe9797;
     color: #fff;
 }
 

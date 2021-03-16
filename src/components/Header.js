@@ -11,7 +11,7 @@ const NavLinks = () => {
         linksArray.map((elem, index) => {
             return (<Link key={elem + index} to={elem} style={{textDecoration: "none"}}>
                     <Nav.Link href={elem}>
-                        {elem.slice(1).charAt(0).toUpperCase() + elem.slice(2)}
+                        {elem.slice(1).charAt(0).toUpperCase() + elem.slice(2).replace(/([A-Z])/g, ' $1').trim()}
                     </Nav.Link></Link>
             )
         })

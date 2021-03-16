@@ -64,9 +64,9 @@ export const b6aData = {
         avatar: productsAvatars.b6aCeoAvatar,
         name: "Adam Grossman",
         position: "Founder & CEO",
-        comment: "B6A has leveraged RPS resources to solve difficult challenges for our Software as a Service (SaaS)" +
+        comment: "\"B6A has leveraged RPS resources to solve difficult challenges for our Software as a Service (SaaS)" +
             " and machine learning platforms. RPS has been able to scale up teams with the specific skill sets critical" +
-            " for our past and future growth as a company. We would not be in the position we are in now without the help of RPS."
+            " for our past and future growth as a company. We would not be in the position we are in now without the help of RPS.\""
 
     },
     challengeText: "RPS needed to build the new product, while maintaining support for B6A customers on the existing platform.",
@@ -107,10 +107,10 @@ export const walkliData = {
         avatar: productsAvatars.walkliCeoAvatar,
         name: "Jeff Peo",
         position: "Founder & CEO",
-        comment: "I met with a number of development options – both on- and off-shore – before choosing to work with RPS." +
+        comment: "\"I met with a number of development options – both on- and off-shore – before choosing to work with RPS." +
             "  What set them apart was their drive to understand my business and to help determine which features should" +
             " be built out for the MVP vs. future releases.  This has really enabled me to accurately match my strategic" +
-            " planning with our technical development."
+            " planning with our technical development.\""
 
     },
     challengeText: "Walkli did not raise pre-seed funding and was bootstrapped by its Founder. RPS needed to deliver a " +

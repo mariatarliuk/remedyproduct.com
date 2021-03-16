@@ -31,7 +31,7 @@ const ProjectPageTemplate = ({data}) => {
                     <Col lg={3} md={12} className="mt-3">
                         <div><Image src={data.logo} width={150}/></div>
                         <div className="d-flex flex-wrap mt-3">{featuresList(data.features)}</div>
-                        <p className="introText mt-4">{data.introText}</p>
+                        <p className="introProductText mt-4">{data.introText}</p>
                         {data.testimonials &&
                         <>
                             <h6 className="mt-4 mb-3">Testimonials</h6>
@@ -43,7 +43,7 @@ const ProjectPageTemplate = ({data}) => {
                                     <span className="ceoPosition">{data.testimonials.position}</span>
                                 </div>
                             </Row>
-                            <p className="introText mt-1">{data.testimonials.comment}</p>
+                            <p className="introProductText mt-1">{data.testimonials.comment}</p>
                         </>
                         }
                     </Col>
