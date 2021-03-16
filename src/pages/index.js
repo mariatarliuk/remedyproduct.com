@@ -1,5 +1,5 @@
 import * as React from "react";
-import MainContent from '../components/mainPageContent'
+import MainContent from '../components/MainPageContent'
 import MainPageTemplate from "../components/MainPageTemplate"
 import "../styles/index.css"
 
