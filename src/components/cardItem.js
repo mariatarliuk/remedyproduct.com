@@ -1,16 +1,23 @@
 import React from 'react';
 import { Card, Nav } from 'react-bootstrap';
 import '../styles/mainPageContent.css';
-import {learnMoreIcons} from "../resources/images"
+import investment from '../images/investment.svg';
+import enterprise from '../images/enterprise.svg';
+import startups from '../images/startups.svg';
 
-const CardItem = ({title, text, image}) => {
+const CardItem = ({title, text}) => {
+    let cardImage;
+    if (title === 'investment') cardImage = investment;
+    if (title === 'enterprise') cardImage = enterprise;
+    if (title === 'startups') cardImage = startups;
+
     return (
-        <Card className="cardContainer">
+        <Card className="card_container">
             <Nav.Link href="/">
-                <Card.Img variant="top" src={image} className="cardImage"/>
+                <Card.Img variant="top" src={cardImage} className="card_image"/>
                 <Card.Body>
-                    <Card.Title className="textTitle">{title.toUpperCase()}</Card.Title>
-                    <div className="horizontalLine"/>
+                    <Card.Title className="text_title">{title.toUpperCase()}</Card.Title>
+                    <div className="horizontal_line"/>
                     <Card.Text>{text}</Card.Text>
                 </Card.Body>
         </Nav.Link>
