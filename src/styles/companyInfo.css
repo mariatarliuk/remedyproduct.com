@@ -1,0 +1,18 @@
+.servicesContainer {
+    border-bottom: 2px solid #b4cbef;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.ourWorkContainer {
+    padding-top: 120px;
+}
+
+.projectFeaturesItem {
+    border: 1px solid #b4cbef;
+    font-size: 11px;
+    font-weight: bold;
+    color: #666b9a;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
