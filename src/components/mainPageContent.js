@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, CardDeck, Nav, Image } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Image } from 'react-bootstrap';
 import '../styles/mainPageContent.css';
-import CardItem from './cardItem';
-import {learnMoreIcons} from "../resources/images.js"
+import CardItem from './CardItem';
+import {learnMoreIcons} from "../resources/images.js";
 
 const MainContent = () => {
     const items = [
@@ -38,7 +38,7 @@ const MainContent = () => {
                     </Row>
                     <Row className="linksWork">
                         <Col>
-                            <Nav.Link href="mailto:Hello@remedyproduct.com" className="link_text">Work with us</Nav.Link>
+                            <Nav.Link href="mailto:Hello@remedyproduct.com" className="linkText">Work with us</Nav.Link>
                         </Col>
                     </Row>
                     <Row>
@@ -60,16 +60,16 @@ const MainContent = () => {
                     </Row>
                 </Container>
             </div>
-            <div className="cardBlock">
+            <div className="cardBlock position-relative">
                 <Container>
-                    <CardDeck>
+                    <Row >
                         {items.map(item => (
                             <CardItem title={item.title} text={item.text} image={item.image} key={item.id}/>
                         ))}
-                    </CardDeck>
+                    </Row>
                 </Container>
                 <div className="backgroundTop"/>
-                <div className="backgroundBottom"/>
+                <div className="backgroundBottom position-absolute left-0 "/>
             </div>
         </div>
     )
