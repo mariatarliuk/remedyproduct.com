@@ -44,6 +44,8 @@ import fourIcon from '../images/icons/startups/pic-4.svg';
 import startupsPictureOne from '../images/pictures/startups-picture-1.png';
 import startupsPictureTwo from '../images/pictures/startups-picture-2.png';
 
+import investmentPicture from '../images/pictures/investment-picture.png';
+
 export const commonIcons = {
     remedyIcon: remedyIcon
 }
@@ -102,4 +104,8 @@ export const startupsIcons = {
     fourIcon,
     startupsPictureOne,
     startupsPictureTwo
+}
+
+export const investmentIcon = {
+    investmentPicture
 }
