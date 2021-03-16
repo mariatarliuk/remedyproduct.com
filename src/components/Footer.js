@@ -12,13 +12,13 @@ const Footer = () => {
                     <span style={{textAlign: "center"}}>© 2020 Remedy Point Solutions, Inc. All rights reserved</span>
                 </Col>
                 <Col lg={5} md={12} className="mb-4 d-flex flex-wrap justify-content-center">
-                    <Link to="https://www.instagram.com/remedyproduct" target="_blank">
+                    <Link to="https://www.instagram.com/remedyproduct" rel="noreferrer" target="_blank">
                         <Instagram
                             className="icon"
                             size={27}
                         />
                     </Link>
-                    <Link to="https://twitter.com/RemedyProduct" target="_blank">
+                    <Link to="https://twitter.com/RemedyProduct" rel="noreferrer" target="_blank">
                         <Twitter
                             className="icon mr-4 ml-4"
                             size={27}
@@ -30,7 +30,7 @@ const Footer = () => {
                             size={27}
                         />
                     </Link>
-                    <a href="mailto:Hello@remedyproduct.com" target="_blank">
+                    <a href="mailto:Hello@remedyproduct.com" rel="noreferrer" target="_blank">
                         <Envelope
                             className="icon"
                             size={27}

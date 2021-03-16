@@ -1,6 +1,6 @@
 import remedyIcon from "../images/logo/common/remedy-logo.svg"
 
-import  apiIcon from "../images/icons/services-icons/API-icon.svg"
+import apiIcon from "../images/icons/services-icons/API-icon.svg"
 import ctoIcon from "../images/icons/services-icons/CTO-icon.svg"
 import dataScienceIcon from "../images/icons/services-icons/data-scince-icon.svg"
 import dataToolsIcon from "../images/icons/services-icons/data-tools-icon.svg"
@@ -25,20 +25,29 @@ import zeamoLogo from "../images/logo/products-logo/zeamo-logo.svg"
 import analyticsPicture from "../images/pictures/analytics-picture.png"
 import classpassPicture from "../images/pictures/classpass-picture.png"
 import walkliPicture from "../images/pictures/walkli-picture.png"
+import classpassIntro from "../images/pictures/classpass-intro.png"
+import b6aIntro from "../images/pictures/B6A-intro.png"
+import walkliIntro from "../images/pictures/walkli-intro.png"
 
-import investment from '../images/icons/learn-more-icons/investment.svg';
-import enterprise from '../images/icons/learn-more-icons/enterprise.svg';
-import startups from '../images/icons/learn-more-icons/startups.svg';
-import arrow from '../images/icons/learn-more-icons/arrow.svg'
+import b6aCeoAvatar from "../images/avatars/b6a-ceo-avatar.png"
+import walkliCeoAvatar from "../images/avatars/walkli-ceo-avatar.png"
 
 export const commonIcons = {
     remedyIcon: remedyIcon
+}
+
+export const productsAvatars = {
+    b6aCeoAvatar: b6aCeoAvatar,
+    walkliCeoAvatar: walkliCeoAvatar
 }
 
 export const productsPictures = {
     analyticsPicture: analyticsPicture,
     classpassPicture: classpassPicture,
     walkliPicture: walkliPicture,
+    classpassIntro: classpassIntro,
+    b6aIntro: b6aIntro,
+    walkliIntro: walkliIntro,
 }
 
 export const serviceIcons = {
@@ -65,11 +74,4 @@ export const productsLogo = {
     walkliLogo: walkliLogo,
     mbaMissionLogo: mbaMissionLogo,
     classpassLogo: classpassLogo,
-}
-
-export const learnMoreIcons = {
-    investment,
-    enterprise,
-    startups,
-    arrow
 }

@@ -34,6 +34,18 @@ const ProductsLogo = () => {
     )
 }
 
+export function featuresList(featuresArray) {
+    return featuresArray.map((elem, index) => {
+        return (
+            <span
+                key={elem + index}
+                className="projectFeaturesItem mr-2 mt-1">
+                {elem}
+            </span>
+        )
+    })
+}
+
 function ProductPictureBlock({productName, picture, featuresArray}) {
     return (
         <Card style={{width: '22rem'}} className="ml-3 mr-3 mt-4">
@@ -43,16 +55,7 @@ function ProductPictureBlock({productName, picture, featuresArray}) {
             <Card.Body>
                 <Card.Title>{productName}</Card.Title>
                 <Card.Text>
-                    {featuresArray.map((elem, index) => {
-                        return (
-                            <span
-                                key={elem + index}
-                                className="projectFeaturesItem mr-2">
-                                {elem}
-                            </span>
-                        )
-                    })
-                    }
+                    {featuresList(featuresArray)}
                 </Card.Text>
             </Card.Body>
         </Card>

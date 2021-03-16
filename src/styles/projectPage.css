@@ -1,0 +1,27 @@
+.introPictureContainer {
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 50%;
+}
+
+.introText {
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.infoText {
+    white-space: pre-line;
+    font-size: 15px;
+}
+
+.ceoName {
+    font-size: 13px;
+}
+
+.ceoPosition {
+    margin-bottom: 10px;
+    opacity: 0.8;
+    width: 100%;
+    font-size: 12px;
+}
