@@ -3,19 +3,14 @@ import { Card, Nav } from 'react-bootstrap';
 import '../styles/mainPageContent.css';
 import {learnMoreIcons} from "../resources/images"
 
-const CardItem = ({title, text}) => {
-    let cardImage;
-    if (title === 'investment') cardImage = learnMoreIcons.investment;
-    if (title === 'enterprise') cardImage = learnMoreIcons.enterprise;
-    if (title === 'startups') cardImage = learnMoreIcons.startups;
-
+const CardItem = ({title, text, image}) => {
     return (
-        <Card className="card_container">
+        <Card className="cardContainer">
             <Nav.Link href="/">
-                <Card.Img variant="top" src={cardImage} className="card_image"/>
+                <Card.Img variant="top" src={image} className="cardImage"/>
                 <Card.Body>
-                    <Card.Title className="text_title">{title.toUpperCase()}</Card.Title>
-                    <div className="horizontal_line"/>
+                    <Card.Title className="textTitle">{title.toUpperCase()}</Card.Title>
+                    <div className="horizontalLine"/>
                     <Card.Text>{text}</Card.Text>
                 </Card.Body>
         </Nav.Link>
