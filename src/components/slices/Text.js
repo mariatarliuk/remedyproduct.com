@@ -1,14 +1,13 @@
 import React from 'react'
 import { RichText } from 'prismic-reactjs'
 import GatsbyLink from '../GatsbyLink'
+import {Container} from "react-bootstrap";
 
 export default ({ slice }) => (
-  <div className="post-text container">
-    <div>
+  <Container className="mt-5">
       <RichText
         render={slice.primary.text.raw || []}
         serializeHyperlink={GatsbyLink}
       />
-    </div>
-  </div>
+  </Container>
 )

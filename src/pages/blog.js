@@ -16,6 +16,10 @@ export const query = graphql`
           uid
           type
           data {
+            title_image {
+                alt
+                url
+            }
             title_text {
             raw
             }

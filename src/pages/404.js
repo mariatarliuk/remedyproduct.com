@@ -1,6 +1,6 @@
 import React from 'react'
 import { withUnpublishedPreview } from 'gatsby-source-prismic'
-import { Post } from '../templates/post'
+import { Post } from '../templates/Post'
 import { Homepage } from './index'
 
 const Page404 = () => (

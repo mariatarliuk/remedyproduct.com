@@ -1,8 +1,9 @@
 import React from 'react'
 import { RichText } from 'prismic-reactjs'
+import {Container} from "react-bootstrap";
 
 export default ({ slice }) => (
-  <div className="post-quote container">
+  <Container>
     <blockquote>{RichText.asText(slice.primary.quote.raw)}</blockquote>
-  </div>
+  </Container>
 )
