@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import {PostSummary} from "../components/BlogPosts"
 import {Container, Image, Row} from "react-bootstrap";
+import "../styles/blogPosts.css"
 
 export const query = graphql`
   query BlogPostQuery($uid: String) {
@@ -107,7 +108,7 @@ const PostBody = ({blogPost, id}) => {
                 </Container>
                 <Image src={blogPost.title_image.url}/>
             </Container>
-            <Container className="d-flex flex-wrap justify-content-center">
+            <Container className="postText d-flex flex-wrap justify-content-center">
                 <PostSlices slices={blogPost.body}/>
             </Container>
 

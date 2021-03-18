@@ -5,3 +5,6 @@
 .readLink {
 
 }
+.postText a{
+  color: blue !important;
+}
