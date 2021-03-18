@@ -43,7 +43,7 @@ const MainContent = () => {
                     </Row>
                     <Row>
                         <Col>
-                            <Nav.Link href="#learn_more" className="arrowLink">
+                            <Nav.Link href="#learnMore" className="arrowLink">
                                 <Image src={learnMoreIcons.arrow} alt="arrow"/>
                             </Nav.Link>
                         </Col>
@@ -52,7 +52,7 @@ const MainContent = () => {
                 {/* <div className="main_bg"></div> */}
             </div>
             <div className="mainContent">
-                <Container id="learn_more">
+                <Container id="learnMore">
                     <Row>
                         <Col className="blueBackText">
                             Supporting founders and established companies in creating the next generation of great digital products

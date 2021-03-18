@@ -31,7 +31,7 @@ const InvestmentItem = () => {
         data.map((item, i) => (
             <Col md={12} lg={6} className="pb-4">
                 <Row className="mb-4">
-                    <Col className="investHeading d-flex align-items-center col-8">    
+                    <Col className="investHeading d-flex align-items-center col-8">
                         {item.title.toUpperCase()}
                     </Col>
                 </Row>
@@ -52,7 +52,7 @@ const InvestmentPage = () => {
     return (
         <>
         <div className="mainBgStartups">
-            <Container >
+            <Container id="learnMore">
                 <Row className="container-fluid d-flex flex-wrap justify-content-center">
                     <Col className="titleText pt-5 pb-5">
                         Remedy Product Studio is a product partner, a technical cofounder, a development solution, and a strategic investor
@@ -69,7 +69,7 @@ const InvestmentPage = () => {
                 Remedy invests in pre-seed and seed rounds in the form of sweat equity. We primarily invest in companies after working together for several months - this is part of our due diligence. We need to know our founders and make sure their work style is a good fit before making an investment decision.
                 </Col>
             </Row>
-            
+
         </Container>
         <div className="goalsBg">
             <Container>
