@@ -1,0 +1,32 @@
+.headerStyle {
+    position: relative;
+    z-index: 100;
+}
+
+.navBlock {
+    width: 100%;
+}
+
+.navXs {
+    padding-left: 15px; 
+    position: absolute; 
+    left: 0%; 
+    top: 110%; 
+    width: 100%; 
+    z-index: 200; 
+    background: rgba(255, 255, 255, 0.6);
+} 
+
+.transparentBg {
+    position: absolute;
+}
+
+.blur {
+    background: transparent;
+    width: 100vw;
+    position: absolute;
+    height: 87vh;
+    backdrop-filter: blur(4px);
+    top: 7em;
+    left: 0;
+}

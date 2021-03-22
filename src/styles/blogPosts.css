@@ -2,23 +2,9 @@
     width: 100%;
     text-align: center;
 }
-
 .readLink {
-    text-decoration: underline;
-    opacity: 0.6;
-}
 
-.readLink:hover {
-    opacity: 1;
 }
-
-.postText a {
-    opacity: 0.7;
-    text-decoration: underline;
-    color: blue;
-}
-
-.postText a:hover {
-    opacity: 1;
-    color: blue;
+.postText a{
+  color: blue !important;
 }

@@ -86,7 +86,7 @@ a:hover {
 }
 
 .blueBackText {
-    padding: 60px 0 55px 0;
+    padding: 65px 0 55px 0;
     color: #fff;
     font-size: 32px;
     line-height: 150%;
@@ -97,7 +97,7 @@ a:hover {
     text-align: center;
     z-index: 100;
     font-size: 16px;
-    min-height: 21.5em;
+    min-height: 22.5em;
 }
 
 .cardContainer:hover {
