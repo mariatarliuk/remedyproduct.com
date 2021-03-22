@@ -97,7 +97,7 @@ a:hover {
     text-align: center;
     z-index: 100;
     font-size: 16px;
-    min-height: 22.5em;
+    min-height: 21.5em;
 }
 
 .cardContainer:hover {
@@ -119,6 +119,7 @@ a:hover {
 
 .card-text {
     text-align: left;
+    padding-top: 2em;
 }
 
 .backgroundTop {
