@@ -1,8 +1,9 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 import BlogPosts from '../components/pagesContent/BlogPosts'
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Page404 from './404'
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 import {Container} from "react-bootstrap";
 
 export const query = graphql`
@@ -44,17 +45,21 @@ export const query = graphql`
     }
   }
 `
-const BlogPage = ({ data }) => {
+const BlogPage = ({data}) => {
     if (!data) {
-        return null
+        return (
+            <>
+                <Page404/>
+            </>
+        )
     }
     const posts = data.allPrismicPost.edges
 
     return (
         <>
             <Header/>
-            <Container><h3 style={{textAlign:"center"}} className="mt-5">RoadmApp</h3></Container>
-            <BlogPosts posts={posts} />
+            <Container><h3 style={{textAlign: "center"}} className="mt-5">RoadmApp</h3></Container>
+            <BlogPosts posts={posts}/>
             <Footer/>
         </>
     )
