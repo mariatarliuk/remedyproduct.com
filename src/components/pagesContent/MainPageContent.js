@@ -63,9 +63,9 @@ const MainContent = () => {
             </div>
             <div className="cardBlock position-relative">
                 <Container>
-                    <Row >
-                        {cardsItems.map(item => (
-                            <CardItem title={item.title} text={item.text} image={item.image} key={item.id}/>
+                    <Row>
+                        {cardsItems.map((item, index) => (
+                            <CardItem title={item.title} text={item.text} image={item.image} key={index}/>
                         ))}
                     </Row>
                 </Container>

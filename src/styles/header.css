@@ -3,20 +3,6 @@
     z-index: 100;
 }
 
-.navBlock {
-    width: 100%;
-}
-
-.navXs {
-    padding-left: 15px; 
-    position: absolute; 
-    left: 0%; 
-    top: 110%; 
-    width: 100%; 
-    z-index: 200; 
-    background: rgba(255, 255, 255, 0.6);
-} 
-
 .transparentBg {
     position: absolute;
 }
@@ -30,4 +16,8 @@
     top: 7em;
     left: 0;
     z-index: 50;
+}
+
+.show .navbar-nav a {
+    border-bottom: 1px solid #f1f6ff;
 }

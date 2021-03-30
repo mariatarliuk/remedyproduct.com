@@ -5,7 +5,8 @@ import {linksArray, singleLinksArray} from "../../resources/links";
 import {Link} from "gatsby";
 import '../../styles/header.css';
 
-const navXs = 'padding-left: 15px; position: absolute; left: 0%; top: 110%; width: 100%; z-index: 200; background: rgba(255, 255, 255, 0.6);'
+
+const navXs = 'width: 300px; position: absolute; right: 2%; top: 95%; z-index: 200; text-align: center; background: rgba(255, 255, 255, 1);'
 
 const NavLinks = () => {
     const newLinksArray = linksArray.map(elem => {
@@ -18,7 +19,11 @@ const NavLinks = () => {
     return (
         newLinksArray.map((elem, index) => {
             return (
-                <Nav.Link eventKey={index} key={elem + index} as={Link} to={elem}>
+                <Nav.Link 
+                    eventKey={index} 
+                    key={index} 
+                    href={elem}
+                >
                     {linksArray[index].slice(1).charAt(0).toUpperCase() + linksArray[index].slice(2).replace(/([A-Z])/g, ' $1').trim()}
                 </Nav.Link>
             )
@@ -62,12 +67,13 @@ const Header = () => {
                 removeBlurBg();
             } else {
                 collapse.current.setAttribute('style', navXs);
+
                 if (collapse.current.classList.contains('show')) blurBg.current.classList.add('blur');
             }
         }
         window.addEventListener('click', handleDocumentClick, true)
         return () => window.removeEventListener('click', handleDocumentClick, true)
-    }, [])
+    })
 
 
 
@@ -89,7 +95,6 @@ const Header = () => {
                     <Navbar.Collapse 
                         id="responsive-navbar-nav" 
                         ref={collapse} 
-                        className='navBlock' 
                         onClick={removeBlurBg}>
                             <Nav className="mr-auto">
                             </Nav>
