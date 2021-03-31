@@ -72,8 +72,10 @@ const Header = () => {
     const handleDocumentClick = (e) => {
         if (e.target !== nav.current && !nav.current.contains(e.target)) {
             setNavExpanded(false);
-            removeNavItemStyle();
-            removeBlurBg();
+            if (e.target.className !== 'card-img-top') {
+                removeNavItemStyle();
+                removeBlurBg();
+            }
         }
     }   
 
