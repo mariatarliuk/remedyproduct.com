@@ -6,7 +6,9 @@ import {Link} from "gatsby";
 import '../../styles/header.css';
 
 
-const navXs = 'width: 300px; position: absolute; right: 2%; top: 95%; z-index: 200; text-align: center; background: rgba(255, 255, 255, 1);'
+const navXs = `width: 300px; position: absolute; right: 16px; top: 83%; z-index: 200; 
+            text-align: center; background: rgba(255, 255, 255, 1); border-radius: 5px 0 5px 5px;
+            box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.2);`;
 
 const NavLinks = () => {
     const newLinksArray = linksArray.map(elem => {
@@ -35,18 +37,33 @@ const Header = () => {
     const blurBg = useRef(null);  
     const nav = useRef(null);
     const collapse = useRef(null);
+    const navIcon = useRef(null);
+    const patch = useRef(null);
     const [navExpanded, setNavExpanded] = useState(false);
 
-    const removeBlurBg = () => {
-        blurBg.current.classList.remove('blur');
+    const removeNavItemStyle = () => {
+        setTimeout(() => {
+            navIcon.current.setAttribute('style', '');
+            patch.current.classList.remove('patch');
+        }, 300)
     }
 
-    const hendleButtonClick = () => {
+    const removeBlurBg = () => {
+        setTimeout(() => {
+            blurBg.current.classList.remove('blur');
+        }, 200) 
+        removeNavItemStyle();
+    }
+
+    const handleButtonClick = () => {
         if (!collapse.current.classList.contains('show')) {
             collapse.current.setAttribute('style', navXs);
+            navIcon.current.setAttribute('style', 'background-color: #fff;  box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.2);');
             blurBg.current.classList.add('blur');
+            patch.current.classList.add('patch');
         } else {
             removeBlurBg();
+            removeNavItemStyle();
         }
     };
 
@@ -55,8 +72,9 @@ const Header = () => {
     const handleDocumentClick = (e) => {
         if (e.target !== nav.current && !nav.current.contains(e.target)) {
             setNavExpanded(false);
+            removeNavItemStyle();
+            removeBlurBg();
         }
-        removeBlurBg();
     }   
 
     useEffect(() => {
@@ -65,10 +83,13 @@ const Header = () => {
             if  (document.documentElement.clientWidth >= 991) {
                 collapse.current.setAttribute('style', '');
                 removeBlurBg();
+                patch.current.classList.remove('patch');
             } else {
                 collapse.current.setAttribute('style', navXs);
-
-                if (collapse.current.classList.contains('show')) blurBg.current.classList.add('blur');
+                if (collapse.current.classList.contains('show')) {
+                    patch.current.classList.add('patch');
+                    blurBg.current.classList.add('blur');
+                }
             }
         }
         window.addEventListener('click', handleDocumentClick, true)
@@ -81,7 +102,7 @@ const Header = () => {
         <div className="position-relative">
             <Navbar 
                 collapseOnSelect expand="lg" 
-                className="container mt-3 mb-3 headerStyle"
+                className="container mt-3 mb-3 headerStyle position-relative"
                 onToggle={setNavExpanded}
                 expanded={navExpanded}
                 ref={nav}>
@@ -91,7 +112,8 @@ const Header = () => {
                             <Image src={commonIcons.remedyIcon}/>
                         </Link>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={hendleButtonClick}/>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleButtonClick} ref={navIcon}/>
+                    <div className="position-absolute" ref={patch}></div>
                     <Navbar.Collapse 
                         id="responsive-navbar-nav" 
                         ref={collapse} 

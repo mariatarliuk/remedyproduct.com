@@ -65,7 +65,7 @@ function ProductPictureBlock({productName, picture, featuresArray}) {
 const CompanyInfoMainPageContent = () => {
     return (
         <Container fluid>
-            <Container id="services" className="servicesContainer" name="services">
+            <Container id="services" className="servicesContainer">
                 <Container className="mb-5 mt-4 d-flex justify-content-center">
                     <h2>SERVICES</h2>
                 </Container>
