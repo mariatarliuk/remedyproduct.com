@@ -6,24 +6,24 @@ import {Link} from "gatsby";
 import '../../styles/header.css';
 
 
-const navXs = `width: 300px; position: absolute; right: 16px; top: 83%; z-index: 200; 
+const navXs = `width: 300px; position: absolute; right: 16px; top: 83%; z-index: 200;
             text-align: center; background: rgba(255, 255, 255, 1); border-radius: 5px 0 5px 5px;
             box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.2);`;
 
 const NavLinks = () => {
     const newLinksArray = linksArray.map(elem => {
-        if (!singleLinksArray.includes(window.location.pathname) && elem.charAt(0) === "#") {
-            return `/${elem}`
-        }
+        // if (!singleLinksArray.includes(window.location.pathname) && elem.charAt(0) === "#") {
+        //     return `/${elem}`
+        // }
         return elem
     })
 
     return (
         newLinksArray.map((elem, index) => {
             return (
-                <Nav.Link 
-                    eventKey={index} 
-                    key={index} 
+                <Nav.Link
+                    eventKey={index}
+                    key={index}
                     href={elem}
                 >
                     {linksArray[index].slice(1).charAt(0).toUpperCase() + linksArray[index].slice(2).replace(/([A-Z])/g, ' $1').trim()}
@@ -34,7 +34,7 @@ const NavLinks = () => {
 }
 
 const Header = () => {
-    const blurBg = useRef(null);  
+    const blurBg = useRef(null);
     const nav = useRef(null);
     const collapse = useRef(null);
     const navIcon = useRef(null);
@@ -51,7 +51,7 @@ const Header = () => {
     const removeBlurBg = () => {
         setTimeout(() => {
             blurBg.current.classList.remove('blur');
-        }, 200) 
+        }, 200)
         removeNavItemStyle();
     }
 
@@ -77,7 +77,7 @@ const Header = () => {
                 removeBlurBg();
             }
         }
-    }   
+    }
 
     useEffect(() => {
         window.onresize = () => {
@@ -102,8 +102,8 @@ const Header = () => {
 
     return (
         <div className="position-relative">
-            <Navbar 
-                collapseOnSelect expand="lg" 
+            <Navbar
+                collapseOnSelect expand="lg"
                 className="container mt-3 mb-3 headerStyle position-relative"
                 onToggle={setNavExpanded}
                 expanded={navExpanded}
@@ -116,9 +116,9 @@ const Header = () => {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleButtonClick} ref={navIcon}/>
                     <div className="position-absolute" ref={patch}></div>
-                    <Navbar.Collapse 
-                        id="responsive-navbar-nav" 
-                        ref={collapse} 
+                    <Navbar.Collapse
+                        id="responsive-navbar-nav"
+                        ref={collapse}
                         onClick={removeBlurBg}>
                             <Nav className="mr-auto">
                             </Nav>
@@ -128,7 +128,7 @@ const Header = () => {
                     </Navbar.Collapse>
             </Navbar>
             <div className="transparentBg" ref={blurBg}></div>
-        </div>  
+        </div>
     )
 }
 

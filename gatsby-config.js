@@ -26,6 +26,7 @@ const gastbySourcePrismicConfig = {
 }
 
 module.exports = {
+    pathPrefix: "/remedyproduct.com",
     siteMetadata: {
         title: 'Remedy Point Solutions site',
     },
