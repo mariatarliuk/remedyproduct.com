@@ -1,8 +1,0 @@
-[
-  {
-    "id": "post",
-    "name": "Post",
-    "repeatable": true,
-    "value": "post.json"
-  }
-]
