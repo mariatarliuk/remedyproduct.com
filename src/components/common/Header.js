@@ -10,11 +10,11 @@ const navXs = `width: 300px; position: absolute; right: 16px; top: 83%; z-index:
             text-align: center; background: rgba(255, 255, 255, 1); border-radius: 5px 0 5px 5px;
             box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.2);`;
 
-const NavLinks = () => {
+const NavLinks = ({ path }) => {
     const newLinksArray = linksArray.map(elem => {
-        // if (!singleLinksArray.includes(window.location.pathname) && elem.charAt(0) === "#") {
-        //     return `/${elem}`
-        // }
+        if (!singleLinksArray.includes(path) && elem.charAt(0) === "#") {
+            return `/${elem}`
+        }
         return elem
     })
     //comment
@@ -22,11 +22,7 @@ const NavLinks = () => {
     return (
         newLinksArray.map((elem, index) => {
             return (
-                <Nav.Link
-                    eventKey={index}
-                    key={index}
-                    href={elem}
-                >
+                <Nav.Link eventKey={index} key={elem + index} as={Link} to={elem}>
                     {linksArray[index].slice(1).charAt(0).toUpperCase() + linksArray[index].slice(2).replace(/([A-Z])/g, ' $1').trim()}
                 </Nav.Link>
             )
@@ -34,7 +30,7 @@ const NavLinks = () => {
     )
 }
 
-const Header = () => {
+const Header = ({path}) => {
     const blurBg = useRef(null);
     const nav = useRef(null);
     const collapse = useRef(null);
@@ -124,7 +120,9 @@ const Header = () => {
                             <Nav className="mr-auto">
                             </Nav>
                             <Nav className="justify-content-end">
-                                <NavLinks/>
+                                <NavLinks
+                                    path={path}
+                                />
                             </Nav>
                     </Navbar.Collapse>
             </Navbar>
