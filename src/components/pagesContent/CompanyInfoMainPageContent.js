@@ -64,9 +64,10 @@ function ProductPictureBlock({productName, picture, featuresArray}) {
 
 const CompanyInfoMainPageContent = () => {
     return (
+        <>
         <Container fluid>
             <Container id="services" className="servicesContainer">
-                <Container className="mb-5 mt-4 d-flex justify-content-center">
+                <Container className="mb-5 mt-4 d-flex justify-content-start">
                     <h2>SERVICES</h2>
                 </Container>
                 <Row className="d-flex justify-content-between mt-4">
@@ -88,8 +89,10 @@ const CompanyInfoMainPageContent = () => {
             <Container className="mt-5 mb-5 d-flex flex-wrap justify-content-lg-between justify-content-center">
                 <ProductsLogo/>
             </Container>
+        </Container>
+        <Container fluid className="grayBg">
             <Container fluid id="ourWork" className="ourWorkContainer">
-                <Container className="d-flex justify-content-center">
+                <Container className="d-flex justify-content-start">
                     <h2>OUR WORK</h2>
                 </Container>
                 <Container fluid className="d-flex flex-wrap justify-content-center">
@@ -111,6 +114,7 @@ const CompanyInfoMainPageContent = () => {
                 </Container>
             </Container>
         </Container>
+        </>
     )
 }
 

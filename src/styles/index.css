@@ -1,4 +1,15 @@
+@font-face {
+    font-family: "CamphorPro"; 
+    src: url("./fonts/CamphorPro/CamphorPro-Light.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
-    font-family: Verdana, sans-serif;
+    font-family: 'CamphorPro', sans-serif;
 }
 

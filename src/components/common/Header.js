@@ -40,14 +40,16 @@ const Header = ({path}) => {
 
     const removeNavItemStyle = () => {
         setTimeout(() => {
-            navIcon.current.setAttribute('style', '');
-            patch.current.classList.remove('patch');
+            if (navIcon.current !== null) {
+                navIcon.current.setAttribute('style', '');
+                patch.current.classList.remove('patch');
+            }
         }, 300)
     }
 
     const removeBlurBg = () => {
         setTimeout(() => {
-            blurBg.current.classList.remove('blur');
+            if (blurBg.current !== null) blurBg.current.classList.remove('blur');
         }, 200)
         removeNavItemStyle();
     }
@@ -63,8 +65,6 @@ const Header = ({path}) => {
             removeNavItemStyle();
         }
     };
-
-
 
     const handleDocumentClick = (e) => {
         if (e.target !== nav.current && !nav.current.contains(e.target)) {
