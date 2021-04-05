@@ -7,7 +7,7 @@ import {startupsTexts} from "../../resources/texts";
 const StartupItem = () => {
     return (
         startupsTexts.map((item, index) => (
-            <Col md={12} lg={6} className="pb-4" key={index}>
+            <Col md={12} lg={6} className="pb-5" key={index}>
                 <Row className="mb-4">
                     <Col className="col-2 col d-flex justify-content-center">
                         <Image src={item.image} fluid/>
