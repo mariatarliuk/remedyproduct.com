@@ -17,7 +17,6 @@ const NavLinks = ({ path }) => {
         }
         return elem
     })
-    //comment
 
     return (
         newLinksArray.map((elem, index) => {
@@ -78,7 +77,6 @@ const Header = ({path}) => {
 
     useEffect(() => {
         window.onresize = () => {
-            if (document.documentElement.clientWidth)
             if  (document.documentElement.clientWidth >= 991) {
                 collapse.current.setAttribute('style', '');
                 removeBlurBg();
@@ -88,6 +86,7 @@ const Header = ({path}) => {
                 if (collapse.current.classList.contains('show')) {
                     patch.current.classList.add('patch');
                     blurBg.current.classList.add('blur');
+                    navIcon.current.setAttribute('style', 'background-color: #fff;  box-shadow: 2px 2px 8px 3px rgba(34, 60, 80, 0.2);');
                 }
             }
         }

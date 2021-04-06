@@ -46,11 +46,11 @@ const ProjectPageTemplate = ({data}) => {
                         </>
                         }
                     </Col>
-                    <Col lg={6} md={12} className="">
+                    <Col lg={6} md={12} className="mainContentProject">
                         <h4 className="mt-4 mb-3">Challenge</h4>
-                        <p className="infoText">{data.challengeText}</p>
+                        <p className="infoText text-justify">{data.challengeText}</p>
                         <h4 className="mt-4 mb-3">Solutions</h4>
-                        <p className="infoText">{data.solutionsTexst}</p>
+                        <p className="infoText text-justify">{data.solutionsTexst}</p>
                         <h4 className="mt-4 mb-3">Results</h4>
                         <ul className="list-group" style={{listStyleType: "none"}}>
                             {data.results.map((elem, index) => {
@@ -58,7 +58,7 @@ const ProjectPageTemplate = ({data}) => {
                             })}
                         </ul>
                         <h4 className="mt-3">Business Impact</h4>
-                        <p className="infoText mt-4">{data.businessImpactText}</p>
+                        <p className="infoText mt-4 text-justify">{data.businessImpactText}</p>
                     </Col>
                     <Col lg={3} md={12} className="">
                         <h5 className="mt-4 mb-3">Product Team</h5>
