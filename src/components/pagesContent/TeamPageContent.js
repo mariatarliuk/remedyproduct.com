@@ -35,7 +35,7 @@ const TeamPageContent = () => {
                             style={{cursor: 'pointer'}}
                             variant={elem.id === currentEmployee.id ? 'secondary' : 'light'}
                             key={elem.id}
-                            onClick={() => handleChangeEmployee(employeesInfo[index])}>
+                            onClick={(e) => handleChangeEmployee(employeesInfo[index])}>
                             <Row>
                                 <Col md={4} sm={2} xs={3}><Image src={elem.avatar} width={50} rounded/></Col>
                                 <Col md={8} sm={10} xs={7}
