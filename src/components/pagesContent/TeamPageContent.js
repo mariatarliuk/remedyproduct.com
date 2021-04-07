@@ -35,7 +35,7 @@ const TeamPageContent = () => {
                             style={{cursor: 'pointer'}}
                             variant={elem.id === currentEmployee.id ? 'secondary' : 'light'}
                             key={elem.id}
-                            onClick={(e) => handleChangeEmployee(employeesInfo[index])}>
+                            onClick={() => handleChangeEmployee(employeesInfo[index])}>
                             <Row>
                                 <Col md={4} sm={2} xs={3}><Image src={elem.avatar} width={50} rounded/></Col>
                                 <Col md={8} sm={10} xs={7}
@@ -103,7 +103,7 @@ const TeamPageContent = () => {
                             {featuresList(currentEmployee.expertise)}
                             <h6 className='mt-4'>Projects</h6>
                             <Row>
-                                {currentEmployee.projects.map((elem, index) => {
+                                {currentEmployee.projects.map((elem) => {
                                     if (windowSize) {
                                         return <Card className='ml-3 projectCard mt-3' style={{width: '10.5rem'}}>
                                             <Card.Img variant="top" src={elem.image}/>
