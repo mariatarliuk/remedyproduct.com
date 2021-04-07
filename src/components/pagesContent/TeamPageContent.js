@@ -125,8 +125,8 @@ const TeamPageContent = () => {
                             </Row>
                             <h6 className='mt-4'>Tools</h6>
                             <Row className='ml-0'>
-                                {currentEmployee.tools.map((elem, index) => {
-                                    return <Image key={index} className='ml-0 mr-3' src={elem}/>
+                                {currentEmployee.tools.map(elem => {
+                                    return <Image key={elem.id} className='ml-0 mr-3' src={elem}/>
                                 })}
                             </Row>
                         </Col>
