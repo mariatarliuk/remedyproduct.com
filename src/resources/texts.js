@@ -1,4 +1,12 @@
-import {productsPictures, productsLogo, productsAvatars, learnMoreIcons, startupsIcons} from "./images"
+import {
+    productsPictures,
+    productsLogo,
+    productsAvatars,
+    learnMoreIcons,
+    startupsIcons,
+    toolsLogo,
+    employeesImages
+} from "./images"
 
 export const classpassPageData = {
     introImage: productsPictures.classpassIntro,
@@ -190,8 +198,94 @@ export const startupsTexts = [
         title: 'How will you grow it',
         name: 'investment',
         image: startupsIcons.fourIcon,
-        body: 'RPS invests in select companies across industries. You can find requirements for investment here. In addition to our own investment, we work with a network of angels and venture capitalists to match startups to the best investor fits. We help startups prepare for fundraising by crafting the narrative, preparing the pitch, and ensuring you are hitting key metrics to demonstrate product-market fit.'
+        body: 'RPS invests in select companies across industries. You can find requirements for investment here.' +
+            ' In addition to our own investment, we work with a network of angels and venture capitalists to match' +
+            ' startups to the best investor fits. We help startups prepare for fundraising by crafting the narrative,' +
+            ' preparing the pitch, and ensuring you are hitting key metrics to demonstrate product-market fit.'
     },
 
+]
+
+export const projectsInfo = {
+    vend: {
+        name: 'Vend',
+        image: productsPictures.vendInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    classpass: {
+        name: 'Classpass',
+        image: productsPictures.classpassInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    }
+}
+
+export const employeesInfo = [
+    {
+        id: 1,
+        name: 'Egor Naganov',
+        photo: employeesImages.naganovPhoto,
+        avatar: employeesImages.naganovIcon,
+        position: 'Product Manager',
+        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
+            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
+            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
+            ' to this days. Egor has 6 years of total experinece.',
+        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
+        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,],
+        tools: [toolsLogo.pythonLogo, toolsLogo.phpLogo, toolsLogo.html5Logo, toolsLogo.reactLogo,
+            toolsLogo.firebaseLogo, toolsLogo.javaLogo, toolsLogo.kotlinLogo]
+    },
+    {
+        id: 2,
+        name: 'Igor “Iggy” Moliver',
+        photo: employeesImages.moliverPhoto,
+        avatar: employeesImages.moliverIcon,
+        position: 'Managing Partner, Head of Product',
+        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
+            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
+            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
+            ' to this days. Egor has 6 years of total experinece.',
+        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
+        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,],
+        tools: [toolsLogo.pythonLogo, toolsLogo.phpLogo, toolsLogo.html5Logo, toolsLogo.reactLogo,
+            toolsLogo.firebaseLogo, toolsLogo.javaLogo, toolsLogo.kotlinLogo]
+    },
+    {
+        id: 3,
+        name: 'Oleg Kruk',
+        photo: employeesImages.krukPhoto,
+        avatar: employeesImages.krukIcon,
+        position: 'Managing Partner, Head of Product',
+        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
+            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
+            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
+            ' to this days. Egor has 6 years of total experinece.',
+        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
+        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,],
+        tools: [toolsLogo.pythonLogo, toolsLogo.phpLogo, toolsLogo.html5Logo, toolsLogo.reactLogo,
+            toolsLogo.firebaseLogo, toolsLogo.javaLogo, toolsLogo.kotlinLogo]
+    },
+    {
+        id: 4,
+        name: 'Sergey Kuzmich',
+        photo: employeesImages.kuzmichPhoto,
+        avatar: employeesImages.kuzmichIcon,
+        position: 'Director of Engineering',
+        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
+            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
+            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
+            ' to this days. Egor has 6 years of total experinece.',
+        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
+        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass, projectsInfo.vend, projectsInfo.vend],
+        tools: [toolsLogo.firebaseLogo, toolsLogo.kotlinLogo]
+    },
 ]
 
