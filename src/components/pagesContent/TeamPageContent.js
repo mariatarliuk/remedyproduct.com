@@ -37,9 +37,9 @@ const TeamPageContent = () => {
                             key={elem.id}
                             onClick={() => handleChangeEmployee(employeesInfo[index])}>
                             <Row>
-                                <Col sm={4} xs={3}><Image src={elem.avatar} width={50} rounded/></Col>
-                                <Col sm={8} xs={7}
-                                     className="d-flex flex-wrap justify-content-start align-content-center ml-0">
+                                <Col md={4} sm={2} xs={3}><Image src={elem.avatar} width={50} rounded/></Col>
+                                <Col md={8} sm={10} xs={7}
+                                     className="d-flex flex-wrap justify-content-start align-content-center">
                                     <span className="employeeName">{elem.name}</span>
                                     <span className="employeePosition">{elem.position}</span>
                                 </Col>
@@ -56,8 +56,8 @@ const TeamPageContent = () => {
         return <Accordion className='container-fluid'>
             <Accordion.Toggle eventKey="0" style={{backgroundColor: '#d7d8dc'}} className='container accordionToggle'>
                 <Row>
-                    <Col xs={3}><Image src={currentEmployee.avatar} className='mt-2 mb-2' width={50} rounded/></Col>
-                    <Col xs={7} className="d-flex flex-wrap justify-content-center align-content-center">
+                    <Col sm={2} xs={3}><Image src={currentEmployee.avatar} className='mt-2 mb-2' width={50} rounded/></Col>
+                    <Col sm={8} xs={7} className="d-flex flex-wrap justify-content-center align-content-center">
                         <span className="employeeName">{currentEmployee.name}</span>
                         <span className="employeePosition">{currentEmployee.position}</span>
                     </Col>
