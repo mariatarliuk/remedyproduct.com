@@ -51,11 +51,13 @@ import investmentPicture from '../images/pictures/investment-picture.png';
 import naganovPhoto from '../images/photos/EgorNaganov-photo.png';
 import naganovIcon from '../images/avatars/employees/EgorNaganov-icon.svg';
 import moliverIcon from '../images/avatars/employees/IggyMoliver-icon.svg';
-import moliverPhoto from '../images/photos/cat1.jpg';
+import moliverPhoto from '../images/photos/IggyMoliver.png';
 import krukIcon from '../images/avatars/employees/OlegKruk.svg';
-import krukPhoto from '../images/photos/cat2.jpg';
+import krukPhoto from '../images/photos/OlegKrook.png';
+import zaytsevIcon from '../images/avatars/employees/SergeyZaytsev.svg';
+import zaytsevPhoto from '../images/photos/SergeyZaytsev.png';
 import kuzmichIcon from '../images/avatars/employees/SergeyKuzmich.svg';
-import kuzmichPhoto from '../images/photos/cat3.jpg';
+import kuzmichPhoto from '../images/photos/SergeyKuzmich.jpg';
 
 import androidLogo from '../images/logo/tools/android.svg'
 import angularLogo from '../images/logo/tools/angular.svg'
@@ -142,7 +144,9 @@ export const employeesImages = {
     krukIcon,
     krukPhoto,
     kuzmichIcon,
-    kuzmichPhoto
+    kuzmichPhoto,
+    zaytsevIcon,
+    zaytsevPhoto
 }
 
 export const toolsLogo = {

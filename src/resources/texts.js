@@ -230,12 +230,10 @@ export const employeesInfo = [
             'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
             'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
             ' to this days. Egor has 6 years of total experinece.',
-        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
+        interests: ['Product Development', 'Risk Management', 'Board and Computer Games', 'Sports Mafia', 'Snowboarding'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
-        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,],
-        tools: [toolsLogo.pythonLogo, toolsLogo.phpLogo, toolsLogo.html5Logo, toolsLogo.reactLogo,
-            toolsLogo.firebaseLogo, toolsLogo.javaLogo, toolsLogo.kotlinLogo]
+        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,]
     },
     {
         id: 2,
@@ -243,16 +241,18 @@ export const employeesInfo = [
         photo: employeesImages.moliverPhoto,
         avatar: employeesImages.moliverIcon,
         position: 'Managing Partner, Head of Product',
-        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
-            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
-            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
-            ' to this days. Egor has 6 years of total experinece.',
-        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
-        methodologies: 'Agile, Waterfall, Kanban',
-        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
-        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,],
-        tools: [toolsLogo.pythonLogo, toolsLogo.phpLogo, toolsLogo.html5Logo, toolsLogo.reactLogo,
-            toolsLogo.firebaseLogo, toolsLogo.javaLogo, toolsLogo.kotlinLogo]
+        intro: 'Igor "Iggy" Moliver is an investor, advisor, and product leader. He is Managing Partner and Head of ' +
+            'Product & Strategy at Remedy Product Studio. Iggy has spent the last 10 years working on technology ' +
+            'products. Iggy started his career in the sports media and marketing world, first at a hockey representation' +
+            ' agency and later at ESPN. As an Analyst in the Programming department at ESPN, he was on the launch team ' +
+            'for the WatchESPN streaming app. \n \n Iggy left the corporate world to launch OnePlayce, a social media data ' +
+            'science company, where he partnered with Remedy to deliver an enterprise SaaS product. Iggy is Chairman of ' +
+            'the Tufts Entrepreneurial Network, serves as a product mentor for accelerator/educational programs, and is' +
+            ' a member of several angel investor groups. Iggy graduated from Tufts University with a degree in Political' +
+            ' Science and Entrepreneurial Leadership. \n \n He lives in New York with his fiance Katya and dog Ollie,' +
+            ' commonly referred to as the cutest most adorable dog in the world (by his niece). Iggy enjoys hiking,' +
+            ' playing tennis, trying weird beers, and getting his hopes up/destroyed by New York sports teams.',
+        expertise: ['Healthcare', 'Wellness', 'Sports'],
     },
     {
         id: 3,
@@ -260,16 +260,19 @@ export const employeesInfo = [
         photo: employeesImages.krukPhoto,
         avatar: employeesImages.krukIcon,
         position: 'Managing Partner, Head of Product',
-        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
-            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
-            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
-            ' to this days. Egor has 6 years of total experinece.',
-        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
-        methodologies: 'Agile, Waterfall, Kanban',
-        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
-        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,],
-        tools: [toolsLogo.pythonLogo, toolsLogo.phpLogo, toolsLogo.html5Logo, toolsLogo.reactLogo,
-            toolsLogo.firebaseLogo, toolsLogo.javaLogo, toolsLogo.kotlinLogo]
+        intro: 'Oleg Krook is Co-Founder and Managing Partner (Head of Engineering) of Remedy Product Studio. Oleg has ' +
+            'over 20 years of technical experience, during which he has played key roles in architecting complex ' +
+            'systems, creating engineering culture, and scaling technical solutions to millions of users. \n \n As Director' +
+            ' of Engineering at Classpass, Oleg helped the company grow from Seed to Series B by solving key technical ' +
+            'challenges, such as delivering the first API services for the initial mobile app and leading a team of ' +
+            'engineers in creating a flexible membership model. As CTO at Block Six Analytics, Oleg built an agile ' +
+            'product and engineering team to integrate their R&D Machine Learning department into the development ' +
+            'cycle. As CTO at Zeamo, Oleg introduced microservice architecture to support the rapid development of ' +
+            'business goals and objectives. Oleg previously served in engineering leadership roles at Amplify ' +
+            'Education and Coherent Solutions.\n \n Oleg has a degree in Computer Science from Belarus State University.' +
+            ' He lives in New Jersey with his daughter Michelle, dog Chucky, and cat Ginger. He enjoys Formula 1 ' +
+            'Racing, Sci-Fi movies, and driving like he’s a stuntman in the Fast and the Furious.',
+        expertise: ['Healthcare', 'Wellness', 'Sports'],
     },
     {
         id: 4,
@@ -281,11 +284,26 @@ export const employeesInfo = [
             'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
             'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
             ' to this days. Egor has 6 years of total experinece.',
-        interests: 'Product Development, Risk Management, Board and Computer Games, Sports Mafia, Snowboarding',
+        interests: ['Product Development', 'Risk Management', 'Board and Computer Games', 'Sports Mafia', 'Snowboarding'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
+        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.vend],
+        tools: [toolsLogo.firebaseLogo, toolsLogo.kotlinLogo, toolsLogo.reactLogo, toolsLogo.html5Logo,
+            toolsLogo.phpLogo, toolsLogo.androidLogo, toolsLogo.iosLogo]
+    },
+    {
+        id: 5,
+        name: 'Sergey Zaytsev',
+        photo: employeesImages.zaytsevPhoto,
+        avatar: employeesImages.zaytsevIcon,
+        position: 'Senior Product Manager',
+        intro: 'Senior Product Manager with a strong technical background. Before starting his path in product ' +
+            'management, Sergey has been a full-stack engineer specializing in web projects, successfully executing ' +
+            'frontend tasks and implementing backend logic.',
+        interests: ['Analytics and SEO', 'Rafting', 'Eurotrips', 'Books & Movies'],
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Healthcare', 'Wellness', 'Data & Analytics', 'Education', 'Fitness'],
         projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass, projectsInfo.vend, projectsInfo.vend],
-        tools: [toolsLogo.firebaseLogo, toolsLogo.kotlinLogo]
     },
 ]
 
