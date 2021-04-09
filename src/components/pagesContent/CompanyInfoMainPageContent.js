@@ -1,8 +1,12 @@
 import * as React from "react"
-import {Card, Col, Container, Image, Row} from "react-bootstrap"
+import {Col, Container, Image, Row, Button} from "react-bootstrap"
 import {serviceIcons, productsLogo, productsPictures} from "../../resources/images"
 import Link from "gatsby-link";
-import "../../styles/companyInfo.css"
+import "../../styles/companyInfo.css";
+import Carousel,  { consts } from "react-elastic-carousel";
+import ProductPictureBlock from './CompanyInfo'
+import {learnMoreIcons} from "../../resources/images.js";
+import {cases} from "../../resources/texts"
 
 function ServiceColumn({iconsArray, textsArray}) {
     return (
@@ -34,35 +38,21 @@ const ProductsLogo = () => {
     )
 }
 
-export function featuresList(featuresArray) {
-    return featuresArray.map((elem, index) => {
-        return (
-            <span
-                key={elem + index}
-                className="projectFeaturesItem mr-2 mt-1">
-                {elem}
-            </span>
-        )
-    })
-}
-
-function ProductPictureBlock({productName, picture, featuresArray}) {
-    return (
-        <Card style={{width: '22rem'}} className="ml-3 mr-3 mt-4">
-            <Link to={`/${productName.toLowerCase().replace(/ /g, "")}`}>
-                <Card.Img variant="top" src={picture}/>
-            </Link>
-            <Card.Body>
-                <Card.Title>{productName}</Card.Title>
-                <Card.Text className="d-flex flex-wrap">
-                    {featuresList(featuresArray)}
-                </Card.Text>
-            </Card.Body>
-        </Card>
-    )
-}
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 1200, itemsToShow: 3, itemsToScroll: 3 },
+];
 
 const CompanyInfoMainPageContent = () => {
+    const myArrow = ({ type, onClick, isEdge }) => {
+        const pointer = type === consts.PREV ? 'buttonArrow buttonArrowLeft' : 'buttonArrow buttonArrowRight'
+        return (
+          <Button onClick={onClick} disabled={isEdge} className="btn-light bg-transparent border-none">
+             <Image src={learnMoreIcons.arrow} alt="arrow" className={pointer}/>
+          </Button>
+        )
+    }
     return (
         <>
         <Container fluid>
@@ -93,24 +83,22 @@ const CompanyInfoMainPageContent = () => {
         <Container fluid className="grayBg">
             <Container fluid id="ourWork" className="ourWorkContainer">
                 <Container className="d-flex justify-content-start">
-                    <h2>OUR WORK</h2>
+                    <Link to="/cases">
+                        <h2>OUR WORK</h2>
+                    </Link>
                 </Container>
                 <Container fluid className="d-flex flex-wrap justify-content-center">
-                    <ProductPictureBlock
-                        picture={productsPictures.classpassPicture}
-                        productName="Classpass"
-                        featuresArray={["Fitness", "Wellness", "Sports"]}
-                    />
-                    <ProductPictureBlock
-                        picture={productsPictures.analyticsPicture}
-                        productName="Block Six Analytics"
-                        featuresArray={["Sports", "Analytics", "Machine Learning"]}
-                    />
-                    <ProductPictureBlock
-                        picture={productsPictures.walkliPicture}
-                        productName="Walkli"
-                        featuresArray={["Fitness", "Wellness", "Sports"]}
-                    />
+                    <Carousel renderArrow={myArrow} breakPoints={breakPoints} focusOnSelect={true}>
+                        {cases.map((item, index) => (
+                            <ProductPictureBlock
+                                picture={item.picture}
+                                productName={item.productName}
+                                featuresArray={item.featuresArray}
+                                width='22rem'
+                                key={index}
+                            />
+                        ))}
+                        </Carousel>
                 </Container>
             </Container>
         </Container>

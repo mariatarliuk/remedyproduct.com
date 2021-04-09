@@ -2,13 +2,25 @@
     padding-top: 60px;
 }
 
+.card {
+    border-radius: 6px;
+}
+
+.card-body {
+    padding: 1.25rem 0.5em 0.5em;
+}
+
 .projectFeaturesItem {
+    font-family: 'CamphorProBold';
     border: 1px solid #b4cbef;
     font-size: 11px;
     font-weight: bold;
-    color: #666b9a;
-    padding: 5px 10px 5px 10px;
+    color: #636AA7;
+    padding: 4px 10px 3px 10px;
     border-radius: 15px;
+    background-color: #F1F6FF;
+    font-size: 13px;
+    letter-spacing: 0.2px;
 }
 
 .servicesContainer {
@@ -20,4 +32,72 @@
 .grayBg {
     background-color: #F1F6FF;
     padding-bottom: 100px;
+}
+
+.caseImg {
+    display: inline-block;
+    width: 350px;
+    overflow: hidden;
+}
+
+.caseImg img {
+    width: 400px;
+    height: 220px;
+    position: relative;
+    left: -7%;
+}
+
+.caseTitle {
+    margin-left: .5em;
+    font-size: 25px;
+    font-family: 'CamphorProBold';
+}
+
+.btn.btn-light {
+    border: none;
+    background-color: transparent;
+}
+
+.buttonArrow {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 36px;
+}
+
+.buttonArrowLeft {
+    transform: rotate(90deg);
+}
+
+.buttonArrowRight {
+    transform: rotate(-90deg);
+}
+
+.caseLink {
+    width: 350px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.caseImg {
+    width: 400px;
+    height: 220px;
+    position: relative;
+    left: -6%;
+}
+
+.caseTitle {
+    font-size: 25px;
+    font-family: 'CamphorProBold';
+    letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 531px) {
+    .rec.rec-arrow {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        line-height: 35px;
+    }
+    
 }
