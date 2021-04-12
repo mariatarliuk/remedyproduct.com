@@ -25,8 +25,8 @@ const MainContent = () => {
     return (
         <div className="mainContainer position-relative">
         <div className="heroContainer position-relative">
-            <div className="heroBg position-absolute"></div>
-            <div className="mainBg position-absolute"></div>
+            <div className="heroBg position-absolute"/>
+            <div className="mainBg position-absolute"/>
             <div className="hero pt-5">
                 <Container className="mainTextContainer d-flex flex-column justify-content-center align-items-center ">
                     <div className="titleContent">
@@ -50,7 +50,7 @@ const MainContent = () => {
                     </Row>
                 </Container>
             </div>
-           
+
         </div>
         <div className="mainContent position-relative">
                 <Container>
