@@ -27,7 +27,9 @@ import classpassPicture from "../images/pictures/classpass-picture.png"
 import walkliPicture from "../images/pictures/walkli-picture.png"
 import classpassIntro from "../images/pictures/classpass-intro.png"
 import b6aIntro from "../images/pictures/B6A-intro.png"
-import walkliIntro from "../images/pictures/walkli-intro.png"
+import walkliIntro from "../images/pictures/walkli-intro.svg"
+import vendInfo from "../images/pictures/Vend-info.svg"
+import classpassInfo from "../images/pictures/classpass-info.svg"
 
 import b6aCeoAvatar from "../images/avatars/b6a-ceo-avatar.png"
 import walkliCeoAvatar from "../images/avatars/walkli-ceo-avatar.png"
@@ -46,48 +48,72 @@ import startupsPictureTwo from '../images/pictures/startups-picture-2.png';
 
 import investmentPicture from '../images/pictures/investment-picture.png';
 
+import naganovPhoto from '../images/photos/EgorNaganov-photo.png';
+import naganovIcon from '../images/avatars/employees/EgorNaganov-icon.svg';
+import moliverIcon from '../images/avatars/employees/IggyMoliver-icon.svg';
+import moliverPhoto from '../images/photos/IggyMoliver.png';
+import krukIcon from '../images/avatars/employees/OlegKruk.svg';
+import krukPhoto from '../images/photos/OlegKrook.png';
+import zaytsevIcon from '../images/avatars/employees/SergeyZaytsev.svg';
+import zaytsevPhoto from '../images/photos/SergeyZaytsev.png';
+import kuzmichIcon from '../images/avatars/employees/SergeyKuzmich.svg';
+import kuzmichPhoto from '../images/photos/SergeyKuzmich.jpg';
+
+import androidLogo from '../images/logo/tools/android.svg'
+import angularLogo from '../images/logo/tools/angular.svg'
+import firebaseLogo from '../images/logo/tools/firebase.svg'
+import html5Logo from '../images/logo/tools/html5.svg'
+import iosLogo from '../images/logo/tools/ios.svg'
+import javaLogo from '../images/logo/tools/java.svg'
+import kotlinLogo from '../images/logo/tools/kotlin.svg'
+import phpLogo from '../images/logo/tools/php.svg'
+import pythonLogo from '../images/logo/tools/python.svg'
+import reactLogo from '../images/logo/tools/react.svg'
+
 export const commonIcons = {
-    remedyIcon: remedyIcon
+    remedyIcon
 }
 
 export const productsAvatars = {
-    b6aCeoAvatar: b6aCeoAvatar,
-    walkliCeoAvatar: walkliCeoAvatar
+    b6aCeoAvatar,
+    walkliCeoAvatar
 }
 
 export const productsPictures = {
-    analyticsPicture: analyticsPicture,
-    classpassPicture: classpassPicture,
-    walkliPicture: walkliPicture,
-    classpassIntro: classpassIntro,
-    b6aIntro: b6aIntro,
-    walkliIntro: walkliIntro,
+    analyticsPicture,
+    classpassPicture,
+    walkliPicture,
+    classpassIntro,
+    b6aIntro,
+    walkliIntro,
+    vendInfo,
+    classpassInfo
 }
 
 export const serviceIcons = {
-    apiIcon: apiIcon,
-    ctoIcon: ctoIcon,
-    dataScienceIcon: dataScienceIcon,
-    dataToolsIcon: dataToolsIcon,
-    developerIcon: developerIcon,
-    diligenceIcon: diligenceIcon,
-    leaderIcon: leaderIcon,
-    performanceIcon: performanceIcon,
-    ventureIcon: ventureIcon,
+    apiIcon,
+    ctoIcon,
+    dataScienceIcon,
+    dataToolsIcon,
+    developerIcon,
+    diligenceIcon,
+    leaderIcon,
+    performanceIcon,
+    ventureIcon,
 }
 
 export const productsLogo = {
-    ritualLogo: ritualLogo,
-    zeamoLogo: zeamoLogo,
-    supersystemLogo: supersystemLogo,
-    b6aLogo: b6aLogo,
-    emLogo: emLogo,
-    gradGrabLogo: gradGrabLogo,
-    tapRoomLogo: tapRoomLogo,
-    vendLogo: vendLogo,
-    walkliLogo: walkliLogo,
-    mbaMissionLogo: mbaMissionLogo,
-    classpassLogo: classpassLogo,
+    ritualLogo,
+    zeamoLogo,
+    supersystemLogo,
+    b6aLogo,
+    emLogo,
+    gradGrabLogo,
+    tapRoomLogo,
+    vendLogo,
+    walkliLogo,
+    mbaMissionLogo,
+    classpassLogo,
 }
 
 export const learnMoreIcons = {
@@ -108,4 +134,30 @@ export const startupsIcons = {
 
 export const investmentIcon = {
     investmentPicture
+}
+
+export const employeesImages = {
+    naganovIcon,
+    naganovPhoto,
+    moliverIcon,
+    moliverPhoto,
+    krukIcon,
+    krukPhoto,
+    kuzmichIcon,
+    kuzmichPhoto,
+    zaytsevIcon,
+    zaytsevPhoto
+}
+
+export const toolsLogo = {
+    androidLogo,
+    angularLogo,
+    firebaseLogo,
+    html5Logo,
+    iosLogo,
+    javaLogo,
+    kotlinLogo,
+    phpLogo,
+    pythonLogo,
+    reactLogo
 }
