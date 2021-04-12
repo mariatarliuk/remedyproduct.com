@@ -1,3 +1,4 @@
+import {productsPictures, productsLogo, productsAvatars, learnMoreIcons, startupsIcons, techologiesIcon} from "./images"
 import {
     productsPictures,
     productsLogo,
@@ -21,6 +22,7 @@ export const classpassPageData = {
         "1 Technical Architect (CTO)"],
     fundingStage: ["Seed to Series B"],
     services: ["Backend Development", "QA Automation", "Technical Architecture"],
+    techologies: [],
     challengeText: "Classpass was a web only monolithic platform when they engaged RPS to address performance and " +
         "consistency issues and build a robust and scalable platform.",
     solutionsTexst: "RPS worked closely with the internal product & engineering team to resolve a critical issue related" +
@@ -68,6 +70,7 @@ export const b6aData = {
     fundingStage: ["Friends & Family to Series A"],
     services: ["Backend Development", "Frontend Development", "Data Science", "API Development",
         "Product Management", "UX/UI Design", "QA Automation", "Technical Architecture"],
+    techologies: [],
     testimonials: {
         avatar: productsAvatars.b6aCeoAvatar,
         name: "Adam Grossman",
@@ -111,6 +114,7 @@ export const walkliData = {
     fundingStage: ["Friends & Family"],
     services: ["Backend Development", "Frontend Development", "iOS Development", "API Development",
         "Product Management", "UX/UI Design", "QA Automation", "Technical Architecture", "Venture Strategy"],
+    techologies: [],
     testimonials: {
         avatar: productsAvatars.walkliCeoAvatar,
         name: "Jeff Peo",
@@ -136,6 +140,113 @@ export const walkliData = {
         "In addition to user growth, walkli successfully launched a travel blogger content partnership program. They " +
         "secured numerous travel and hospitality clients, including Westin Hotels, Hostelling international, the " +
         "Amsterdam tourism board, and Croatia tourism board. Walkli was selected as a MassChallenge 2018 finalist."
+}
+
+export const ritualData = {
+    introImage: productsPictures.ritualPicture,
+    site: "ritual.io",
+    siteLink: "https://www.ritual.io/",
+    logo: productsLogo.ritualLogo,
+    features: ["Wellness"],
+    introText: "Ritual is a cross-platform mobile application with a range of audio guided practices that can help " + 
+                "boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range " + 
+                "of expert-guided wellbeing practices to find what works for each user. The app collaborates with renowned " +
+                "scientific, spiritual and cultural leaders to build their wisdom into guided audio experiences",
+    productTeam: ["1 backend developer", "1 frontend developer", "1 designer", "1 product manager"],
+    fundingStage: ["Pre-Seed to Seed"],
+    techologies: [techologiesIcon.reactIcon, 'React Native', 'FastApi', 'GraphQL', techologiesIcon.terraformIcon, 
+                techologiesIcon.awsIcon],
+    testimonials: {
+        avatar: productsAvatars.ritualHeadAvatar,
+        name: "Dante Doig-Acuña",
+        position: "Head of Product",
+        comment: "\"For an early startup like us, working with RPS has been a game-changer. I’d worked with engineering " +
+            "agencies in the past, and RPS went so far beyond that. The RPS team has been a key part of product, design, " + 
+            "and even growth strategy, from the very beginning. This is a crew of startup veterans, so our pace has been " +
+            "quick and agile but our infrastructure is built to scale. We couldn’t be happier with this partnership.\""
+    },
+    challengeText: "Ritual engaged RPS to build a minimum viable product (MVP) in 3 months to receive seed funding.",
+    solutionsTexst: "RPS focused on the development of a mobile app and a flexible CMS system. Ritual successfully raised " +
+                    "a seed round led by PivotNorth Capital.",
+    results: ["RPS released the first version of the iOS platform and CMS app after 3 months. The team focused on gathering " +
+            "qualitative and quantitative user feedback to inform the product roadmap. Over the next 6 months the team added " +
+            "new features, improved existing features, and released an Android app.", 
+            "Ritual started working with RPS in August 2019 and has built a strong integrated partnership. The combined team " +
+            "continues to work together on new feature development to continue to create a deeper well being experience, " +
+            "grow the user base, and expand the expert community. In addition to software development, RPS is heavily involved " +
+            "in improving feedback tools and methodologies to engage users and create the best possible experience."],
+    businessImpactText: "Ritual raised a seed round led by Tim Connors (Midas List #95) of PivotNorth Capital. The team is " +
+                        "seeing consistent user growth, increased user engagement, and revenue growth via subscriptions."
+}
+
+export const mbamissionData = {
+    introImage: productsPictures.mbamissionPicture,
+    site: "mbamission.com",
+    siteLink: "https://www.mbamission.com",
+    logo: productsLogo.mbaMissionLogo,
+    features: ["Education", "Professional Services"],
+    introText: "Holistic Health International is a medical diagnostics and supplements company founded by Dr. Amy Yasko, " +
+            "Microbiology/Immunology/Infectious Disease specialist and Doctor of Natural Health. Holistic Health specializes " +
+            "in neurological research and the treatment of brain diseases using the Yasko Protocol, including holistic " +
+            "treatment, alternative therapies, and custom supplements.",
+    productTeam: ["1 backend developer", "1 frontend developer", "1 product manager"],
+    fundingStage: ["Bootstrapped (not venture funded)"],
+    techologies: [techologiesIcon.phpIcon, 'Javascript', ' Slim', 'Laravel', 'MongoDB', techologiesIcon.terraformIcon, 
+                techologiesIcon.awsIcon],
+    testimonials: {
+        avatar: productsAvatars.mbamissionDirectorAvatar,
+        name: "Aimee Lukin",
+        position: "Director of Marketing and Operations",
+        comment: "\"Remedy has helped us create and maintain several custom systems to streamline our consulting business. " +
+                "As a company with a small team and unique needs, we have relied on RPS every step of the way. They have " +
+                "consistently listened to our pain points and come up with creative solutions. We have always appreciated " +
+                "their honesty and willingness to work within our budgets. They have been an important partner of ours for " +
+                "many years and we fully trust them with our technology needs. \""
+    },
+    challengeText: "RPS was asked to build and maintain a flexible system for managing the e-commerce platform and a powerful " +
+                    "dashboard for managing business needs.",
+    solutionsTexst: "RPS developed a Billing and Consultant Solutions dashboard that allowed for deeper integration with the " +
+                    "Shopify e-commerce platform.",
+    results: ["The CRM system is used for processing purchases and managing consultants’ workflow. The solution allows " +
+            "mbaMission administrators and MBA consultants to set availability, track progress, manage their customers, " +
+            "and process payments."],
+    businessImpactText: "Today mbaMission is the number-one-ranked firm on GMAT Club, with more than 1,000 five-star reviews. " +
+                        "mbaMission was named the number one business school admissions consulting firm by Poets&Quants in " +
+                        "2019. The technical solution has allowed mbaMission to scale revenue while keeping operational costs " +
+                        "low, resulting in a sustainable cash-flow positive company."
+}
+
+export const taproomData = {
+    introImage: productsPictures.taproomPicture,
+    site: "taproom.app",
+    siteLink: "https://www.taproom.app",
+    logo: productsLogo.tapRoomLogo,
+    features: ["Social Media"],
+    introText: "TapRoom is a mobile app that allows users to videochat in digital versions of real world venues and bars. " +
+            "Users can network, hang out, or learn something in a digital home for their real-world community.",
+    productTeam: ["1 full-stack developer", "1 product manager"],
+    fundingStage: ["Friends & Family"],
+    techologies: [techologiesIcon.reactIcon, techologiesIcon.firebaseIcon, 'Twilio', techologiesIcon.googleMapsIcon, 
+                'Google Places API'],
+    testimonials: {
+        avatar: productsAvatars.taproomCeoAvatar,
+        name: "Rob Resnick",
+        position: "Founder & CEO",
+        comment: "\"The team at Remedy was incredible.  They were not only fast and dedicated, but as a first time founder " +
+                "I was a little all over the place. They were patient, introduced helpful methodology, and kept everything " +
+                "organized. They were a true partner! I found myself looking forward to our calls, and the product turned out "+
+                "just as I'd imagined it.\""},
+    challengeText: "TapRoom engaged RPS to build a minimum viable product (MVP) to launch early, gather feedback, and iterate " +
+                "quickly. Taproom relied on Remedy for leading product strategy, implementing agile development practices, " +
+                "and gathering user feedback.",
+    solutionsTexst: "RPS implemented a lean development process, focusing on keeping a tight initial feature scope. RPS built " +
+                "a cross-platform mobile application, starting with an iOS release.",
+    results: ["RPS released an Alpha version of the iOS application in 3 weeks. The team continuously gathered user feedback " +
+            "and iterated, releasing updates with new features. After 3 months, we released an open beta to the iOS app store. " +
+            "An Android application was released shortly thereafter."],
+    businessImpactText: "The application received high ratings and positive reviews. In particular, user testimonials raved " +
+                    "about the idea, the look & feel of the app, and novel features, like Whisper. The app has seen user " +
+                    "adoption, including large community meetups and networking events."
 }
 
 export const cardsItems = [
@@ -204,6 +315,38 @@ export const startupsTexts = [
             ' preparing the pitch, and ensuring you are hitting key metrics to demonstrate product-market fit.'
     },
 
+]
+
+export const cases = [
+    {
+        picture: productsPictures.classpassPicture, 
+        productName: 'Classpass', 
+        featuresArray: ["Fitness", "Wellness", "Sports"]
+    },
+    {
+        picture: productsPictures.analyticsPicture, 
+        productName: 'Block Six Analytics', 
+        featuresArray: ["Sports", "Analytics", "Machine Learning"]
+    },
+    {
+        picture: productsPictures.walkliPicture, 
+        productName: 'Walkli', 
+        featuresArray: ["Fitness", "Wellness", "Sports"]
+    },
+    {
+        picture: productsPictures.taproomPicture, 
+        productName: 'Taproom', 
+        featuresArray:["Social Media"]
+    },
+    {
+        picture: productsPictures.ritualPicture, 
+        productName: 'Ritual', 
+        featuresArray:["Wellness"]
+    },
+    {
+        picture: productsPictures.mbamissionPicture, 
+        productName: 'MbaMission', 
+        featuresArray: ["Education, Professional Services"]},
 ]
 
 export const projectsInfo = {

@@ -25,14 +25,20 @@ import zeamoLogo from "../images/logo/products-logo/zeamo-logo.svg"
 import analyticsPicture from "../images/pictures/analytics-picture.png"
 import classpassPicture from "../images/pictures/classpass-picture.png"
 import walkliPicture from "../images/pictures/walkli-picture.png"
+import ritualPicture from "../images/pictures/ritual-picture.png"
+import taproomPicture from "../images/pictures/taproom-picture.png"
+import mbamissionPicture from "../images/pictures/mbamission-picture.png"
 import classpassIntro from "../images/pictures/classpass-intro.png"
 import b6aIntro from "../images/pictures/B6A-intro.png"
 import walkliIntro from "../images/pictures/walkli-intro.svg"
 import vendInfo from "../images/pictures/Vend-info.svg"
 import classpassInfo from "../images/pictures/classpass-info.svg"
 
-import b6aCeoAvatar from "../images/avatars/b6a-ceo-avatar.png"
-import walkliCeoAvatar from "../images/avatars/walkli-ceo-avatar.png"
+import b6aCeoAvatar from "../images/avatars/b6a-ceo-avatar.png";
+import walkliCeoAvatar from "../images/avatars/walkli-ceo-avatar.png";
+import ritualHeadAvatar from "../images/avatars/ritual-head-avatar.png";
+import taproomCeoAvatar from "../images/avatars/taproom-ceo-avatar.png";
+import mbamissionDirectorAvatar from "../images/avatars/mbamission-director-avatar.png";
 
 import investment from '../images/icons/learn-more-icons/investment.svg';
 import enterprise from '../images/icons/learn-more-icons/enterprise.svg';
@@ -47,6 +53,14 @@ import startupsPictureOne from '../images/pictures/startups-picture-1.png';
 import startupsPictureTwo from '../images/pictures/startups-picture-2.png';
 
 import investmentPicture from '../images/pictures/investment-picture.png';
+
+
+import reactIcon from '../images/logo/tools/react.svg';
+import awsIcon from '../images/logo/tools/aws.svg';
+import firebaseIcon from '../images/logo/tools/firebase.svg';
+import googleMapsIcon from '../images/logo/tools/google-maps.svg';
+import phpIcon from '../images/logo/tools/php.svg';
+import terraformIcon from '../images/logo/tools/terraform.svg'
 
 import naganovPhoto from '../images/photos/EgorNaganov-photo.png';
 import naganovIcon from '../images/avatars/employees/EgorNaganov-icon.svg';
@@ -70,11 +84,31 @@ import phpLogo from '../images/logo/tools/php.svg'
 import pythonLogo from '../images/logo/tools/python.svg'
 import reactLogo from '../images/logo/tools/react.svg'
 
+
 export const commonIcons = {
     remedyIcon
 }
 
 export const productsAvatars = {
+
+    b6aCeoAvatar: b6aCeoAvatar,
+    walkliCeoAvatar: walkliCeoAvatar,
+    ritualHeadAvatar: ritualHeadAvatar,
+    mbamissionDirectorAvatar: mbamissionDirectorAvatar,
+    taproomCeoAvatar: taproomCeoAvatar,
+}
+
+export const productsPictures = {
+    analyticsPicture: analyticsPicture,
+    classpassPicture: classpassPicture,
+    walkliPicture: walkliPicture,
+    ritualPicture: ritualPicture,
+    taproomPicture: taproomPicture,
+    mbamissionPicture: mbamissionPicture,
+    classpassIntro: classpassIntro,
+    b6aIntro: b6aIntro,
+    walkliIntro: walkliIntro,
+
     b6aCeoAvatar,
     walkliCeoAvatar
 }
@@ -88,6 +122,7 @@ export const productsPictures = {
     walkliIntro,
     vendInfo,
     classpassInfo
+
 }
 
 export const serviceIcons = {
@@ -134,6 +169,16 @@ export const startupsIcons = {
 
 export const investmentIcon = {
     investmentPicture
+}
+
+
+export const techologiesIcon = {
+    reactIcon,
+    awsIcon,
+    firebaseIcon,
+    googleMapsIcon,
+    terraformIcon,
+    phpIcon,
 }
 
 export const employeesImages = {

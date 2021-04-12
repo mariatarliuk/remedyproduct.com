@@ -2,7 +2,11 @@
     height: 580px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 20% 50%;
+    background-position: 20% 20%;
+}
+
+.fontBold {
+    font-family: 'CamphorProBold', sans-serif;
 }
 
 .introProductText {
@@ -13,6 +17,7 @@
 .infoText {
     white-space: pre-line;
     font-size: 15px;
+    margin-bottom: 2rem;
 }
 
 .ceoName {
@@ -27,7 +32,10 @@
 }
 
 .mainContentProject h4{
-    font-weight: bolder;
     line-height: 24px;
-    letter-spacing: 0.03em;
+    font-family: 'CamphorProBold', sans-serif;
+}
+
+.devInfo h5 {
+    font-family: 'CamphorProBold', sans-serif;
 }

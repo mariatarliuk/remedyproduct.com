@@ -3,7 +3,14 @@
     src: url("./fonts/CamphorPro/CamphorPro-Light.otf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
-    }
+}
+
+@font-face {
+    font-family: "CamphorProBold"; 
+    src: url("./fonts/CamphorPro/CamphorPro-Medium.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
 
 html {
     scroll-behavior: smooth;
