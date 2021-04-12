@@ -11,9 +11,8 @@
 }
 
 .projectFeaturesItem {
-    font-family: 'CamphorProBold';
+    font-family: 'CamphorProBold', sans-serif;
     border: 1px solid #b4cbef;
-    font-size: 11px;
     font-weight: bold;
     color: #636AA7;
     padding: 4px 10px 3px 10px;
@@ -50,7 +49,7 @@
 .caseTitle {
     margin-left: .5em;
     font-size: 25px;
-    font-family: 'CamphorProBold';
+    font-family: 'CamphorProBold', sans-serif;
 }
 
 .btn.btn-light {
@@ -88,7 +87,7 @@
 
 .caseTitle {
     font-size: 25px;
-    font-family: 'CamphorProBold';
+    font-family: 'CamphorProBold', sans-serif;
     letter-spacing: 0.2px;
 }
 

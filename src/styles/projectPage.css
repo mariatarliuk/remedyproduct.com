@@ -6,7 +6,7 @@
 }
 
 .fontBold {
-    font-family: 'CamphorProBold';
+    font-family: 'CamphorProBold', sans-serif;
 }
 
 .introProductText {
@@ -33,9 +33,9 @@
 
 .mainContentProject h4{
     line-height: 24px;
-    font-family: 'CamphorProBold';
+    font-family: 'CamphorProBold', sans-serif;
 }
 
 .devInfo h5 {
-    font-family: 'CamphorProBold';
+    font-family: 'CamphorProBold', sans-serif;
 }
