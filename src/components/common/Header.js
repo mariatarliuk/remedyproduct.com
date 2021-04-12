@@ -4,7 +4,7 @@ import {commonIcons} from "../../resources/images";
 import {linksArray, singleLinksArray} from "../../resources/links";
 import {Link} from "gatsby";
 import '../../styles/header.css';
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const navXs = `width: 300px; position: absolute; right: 16px; top: 83%; z-index: 200;
             text-align: center; background: rgba(255, 255, 255, 1); border-radius: 5px 0 5px 5px;
@@ -21,7 +21,7 @@ const NavLinks = ({ path }) => {
     return (
         newLinksArray.map((elem, index) => {
             return (
-                <Nav.Link eventKey={index} key={elem + index} as={Link} to={elem}>
+                <Nav.Link eventKey={index} key={elem + index} as={Link} to={elem} onClick={() => scrollTo(elem)}>
                     {linksArray[index].slice(1).charAt(0).toUpperCase() + linksArray[index].slice(2).replace(/([A-Z])/g, ' $1').trim()}
                 </Nav.Link>
             )
