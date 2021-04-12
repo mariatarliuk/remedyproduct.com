@@ -21,7 +21,7 @@ const NavLinks = ({path}) => {
     return (
         newLinksArray.map((elem, index) => {
             return (
-                <Nav.Link className='link' eventKey={index} key={elem + index} as={Link} to={elem} onClick={() => scrollTo(elem)}>
+                <Nav.Link className='link' eventKey={index} key={elem + index} as={Link} to={elem} >
                     {linksArray[index].slice(1).charAt(0).toUpperCase() + linksArray[index].slice(2).replace(/([A-Z])/g, ' $1').trim()}
                 </Nav.Link>
             )

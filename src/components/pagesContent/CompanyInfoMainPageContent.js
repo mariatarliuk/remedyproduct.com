@@ -88,7 +88,7 @@ const CompanyInfoMainPageContent = () => {
                     </Link>
                 </Container>
                 <Container fluid className="d-flex flex-wrap justify-content-center">
-                    <Carousel renderArrow={myArrow} breakPoints={breakPoints} focusOnSelect={true} isRTL>
+                    <Carousel renderArrow={myArrow} breakPoints={breakPoints} focusOnSelect={true}>
                         {cases.map((item, index) => (
                             <ProductPictureBlock
                                 picture={item.picture}
@@ -96,6 +96,7 @@ const CompanyInfoMainPageContent = () => {
                                 featuresArray={item.featuresArray}
                                 width='22rem'
                                 key={index}
+                                url={item.url}
                             />
                         ))}
                         </Carousel>
