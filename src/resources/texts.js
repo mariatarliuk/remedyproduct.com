@@ -1,4 +1,3 @@
-import {productsPictures, productsLogo, productsAvatars, learnMoreIcons, startupsIcons, techologiesIcon} from "./images"
 import {
     productsPictures,
     productsLogo,
@@ -6,7 +5,8 @@ import {
     learnMoreIcons,
     startupsIcons,
     toolsLogo,
-    employeesImages
+    employeesImages,
+    techologiesIcon
 } from "./images"
 
 export const classpassPageData = {
@@ -148,20 +148,20 @@ export const ritualData = {
     siteLink: "https://www.ritual.io/",
     logo: productsLogo.ritualLogo,
     features: ["Wellness"],
-    introText: "Ritual is a cross-platform mobile application with a range of audio guided practices that can help " + 
-                "boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range " + 
+    introText: "Ritual is a cross-platform mobile application with a range of audio guided practices that can help " +
+                "boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range " +
                 "of expert-guided wellbeing practices to find what works for each user. The app collaborates with renowned " +
                 "scientific, spiritual and cultural leaders to build their wisdom into guided audio experiences",
     productTeam: ["1 backend developer", "1 frontend developer", "1 designer", "1 product manager"],
     fundingStage: ["Pre-Seed to Seed"],
-    techologies: [techologiesIcon.reactIcon, 'React Native', 'FastApi', 'GraphQL', techologiesIcon.terraformIcon, 
+    techologies: [techologiesIcon.reactIcon, 'React Native', 'FastApi', 'GraphQL', techologiesIcon.terraformIcon,
                 techologiesIcon.awsIcon],
     testimonials: {
         avatar: productsAvatars.ritualHeadAvatar,
         name: "Dante Doig-Acuña",
         position: "Head of Product",
         comment: "\"For an early startup like us, working with RPS has been a game-changer. I’d worked with engineering " +
-            "agencies in the past, and RPS went so far beyond that. The RPS team has been a key part of product, design, " + 
+            "agencies in the past, and RPS went so far beyond that. The RPS team has been a key part of product, design, " +
             "and even growth strategy, from the very beginning. This is a crew of startup veterans, so our pace has been " +
             "quick and agile but our infrastructure is built to scale. We couldn’t be happier with this partnership.\""
     },
@@ -170,7 +170,7 @@ export const ritualData = {
                     "a seed round led by PivotNorth Capital.",
     results: ["RPS released the first version of the iOS platform and CMS app after 3 months. The team focused on gathering " +
             "qualitative and quantitative user feedback to inform the product roadmap. Over the next 6 months the team added " +
-            "new features, improved existing features, and released an Android app.", 
+            "new features, improved existing features, and released an Android app.",
             "Ritual started working with RPS in August 2019 and has built a strong integrated partnership. The combined team " +
             "continues to work together on new feature development to continue to create a deeper well being experience, " +
             "grow the user base, and expand the expert community. In addition to software development, RPS is heavily involved " +
@@ -191,7 +191,7 @@ export const mbamissionData = {
             "treatment, alternative therapies, and custom supplements.",
     productTeam: ["1 backend developer", "1 frontend developer", "1 product manager"],
     fundingStage: ["Bootstrapped (not venture funded)"],
-    techologies: [techologiesIcon.phpIcon, 'Javascript', ' Slim', 'Laravel', 'MongoDB', techologiesIcon.terraformIcon, 
+    techologies: [techologiesIcon.phpIcon, 'Javascript', ' Slim', 'Laravel', 'MongoDB', techologiesIcon.terraformIcon,
                 techologiesIcon.awsIcon],
     testimonials: {
         avatar: productsAvatars.mbamissionDirectorAvatar,
@@ -226,7 +226,7 @@ export const taproomData = {
             "Users can network, hang out, or learn something in a digital home for their real-world community.",
     productTeam: ["1 full-stack developer", "1 product manager"],
     fundingStage: ["Friends & Family"],
-    techologies: [techologiesIcon.reactIcon, techologiesIcon.firebaseIcon, 'Twilio', techologiesIcon.googleMapsIcon, 
+    techologies: [techologiesIcon.reactIcon, techologiesIcon.firebaseIcon, 'Twilio', techologiesIcon.googleMapsIcon,
                 'Google Places API'],
     testimonials: {
         avatar: productsAvatars.taproomCeoAvatar,
@@ -319,33 +319,33 @@ export const startupsTexts = [
 
 export const cases = [
     {
-        picture: productsPictures.classpassPicture, 
-        productName: 'Classpass', 
+        picture: productsPictures.classpassPicture,
+        productName: 'Classpass',
         featuresArray: ["Fitness", "Wellness", "Sports"]
     },
     {
-        picture: productsPictures.analyticsPicture, 
-        productName: 'Block Six Analytics', 
+        picture: productsPictures.analyticsPicture,
+        productName: 'Block Six Analytics',
         featuresArray: ["Sports", "Analytics", "Machine Learning"]
     },
     {
-        picture: productsPictures.walkliPicture, 
-        productName: 'Walkli', 
+        picture: productsPictures.walkliPicture,
+        productName: 'Walkli',
         featuresArray: ["Fitness", "Wellness", "Sports"]
     },
     {
-        picture: productsPictures.taproomPicture, 
-        productName: 'Taproom', 
+        picture: productsPictures.taproomPicture,
+        productName: 'Taproom',
         featuresArray:["Social Media"]
     },
     {
-        picture: productsPictures.ritualPicture, 
-        productName: 'Ritual', 
+        picture: productsPictures.ritualPicture,
+        productName: 'Ritual',
         featuresArray:["Wellness"]
     },
     {
-        picture: productsPictures.mbamissionPicture, 
-        productName: 'MbaMission', 
+        picture: productsPictures.mbamissionPicture,
+        productName: 'MbaMission',
         featuresArray: ["Education, Professional Services"]},
 ]
 

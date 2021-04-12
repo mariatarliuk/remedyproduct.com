@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Accordion, Card, Col, Container, Image, ListGroup, Row} from "react-bootstrap";
 import {employeesInfo} from "../../resources/texts";
-import {featuresList} from "./CompanyInfoMainPageContent";
+import {featuresList} from "./CompanyInfo";
 import "../../styles/teamPage.css"
 import arrowDown from '../../images/icons/arrowDown.svg'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col, Nav, Image, Card} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import ProductPictureBlock from './CompanyInfo';
 import {cases} from "../../resources/texts"
 import '../../styles/startups.css'
@@ -15,7 +15,7 @@ const CasesList = () => {
                         </Col>
                     </Row>
                 </Container>
-            </div> 
+            </div>
             <Container>
                 <Row className="d-flex justify-content-center">
                     {cases.map((item, index) => (

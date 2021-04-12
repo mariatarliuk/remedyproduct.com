@@ -1,6 +1,6 @@
 import * as React from "react"
 import {Col, Container, Image, Row, Button} from "react-bootstrap"
-import {serviceIcons, productsLogo, productsPictures} from "../../resources/images"
+import {serviceIcons, productsLogo} from "../../resources/images"
 import Link from "gatsby-link";
 import "../../styles/companyInfo.css";
 import Carousel,  { consts } from "react-elastic-carousel";
@@ -88,7 +88,7 @@ const CompanyInfoMainPageContent = () => {
                     </Link>
                 </Container>
                 <Container fluid className="d-flex flex-wrap justify-content-center">
-                    <Carousel renderArrow={myArrow} breakPoints={breakPoints} focusOnSelect={true}>
+                    <Carousel renderArrow={myArrow} breakPoints={breakPoints} focusOnSelect={true} isRTL>
                         {cases.map((item, index) => (
                             <ProductPictureBlock
                                 picture={item.picture}

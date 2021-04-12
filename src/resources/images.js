@@ -99,21 +99,6 @@ export const productsAvatars = {
 }
 
 export const productsPictures = {
-    analyticsPicture: analyticsPicture,
-    classpassPicture: classpassPicture,
-    walkliPicture: walkliPicture,
-    ritualPicture: ritualPicture,
-    taproomPicture: taproomPicture,
-    mbamissionPicture: mbamissionPicture,
-    classpassIntro: classpassIntro,
-    b6aIntro: b6aIntro,
-    walkliIntro: walkliIntro,
-
-    b6aCeoAvatar,
-    walkliCeoAvatar
-}
-
-export const productsPictures = {
     analyticsPicture,
     classpassPicture,
     walkliPicture,
@@ -121,7 +106,12 @@ export const productsPictures = {
     b6aIntro,
     walkliIntro,
     vendInfo,
-    classpassInfo
+    classpassInfo,
+    b6aCeoAvatar,
+    walkliCeoAvatar,
+    mbamissionPicture,
+    taproomPicture,
+    ritualPicture,
 
 }
 
