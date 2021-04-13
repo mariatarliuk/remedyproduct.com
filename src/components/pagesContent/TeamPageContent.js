@@ -107,16 +107,16 @@ const TeamPageContent = () => {
                                 <p>{currentEmployee.methodologies}</p></>}
                             {currentEmployee.interests && <><h6>Area of interests</h6>
                                 <ul>
-                                    {currentEmployee.interests.map(elem => {
-                                        return <li>{elem}</li>
+                                    {currentEmployee.interests.map((elem, i) => {
+                                        return <li key={i}>{elem}</li>
                                     })}</ul>
                             </>}
                             {currentEmployee.projects && <>
                                 <h6 className='mt-4'>Projects</h6>
                                 <Row>
-                                    {currentEmployee.projects.map((elem) => {
+                                    {currentEmployee.projects.map((elem, i) => {
                                         if (windowSize) {
-                                            return <Card className='ml-3 projectCard mt-3' style={{width: '10.5rem'}}>
+                                            return <Card className='ml-3 projectCard mt-3' style={{width: '10.5rem'}} key={i}>
                                                 <Card.Img variant="top" src={elem.image}/>
                                                 <Col>
                                                     <h6 className='mt-2'>{elem.name}</h6>
@@ -124,7 +124,7 @@ const TeamPageContent = () => {
                                                 </Col>
                                             </Card>
                                         } else {
-                                            return <Row className='projectCard mt-3 ml-3 mr-3'>
+                                            return <Row className='projectCard mt-3 ml-3 mr-3' key={i}>
                                                 <Image className='m-1' fluid src={elem.image}/>
                                                 <Col xs={6} className='mt-3'>
                                                     <h6 className=''>{elem.name}</h6>
