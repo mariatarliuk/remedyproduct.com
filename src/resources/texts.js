@@ -9,7 +9,7 @@ import {
     techologiesIcon
 } from "./images"
 
-export const classpassPageData = {
+export const classpassData = {
     introImage: productsPictures.classpassIntro,
     site: "classpass.com",
     siteLink: "https://classpass.com/",
@@ -319,40 +319,40 @@ export const startupsTexts = [
 
 export const cases = [
     {
-        picture: productsPictures.classpassPicture, 
-        productName: 'Classpass', 
+        picture: productsPictures.classpassPicture,
+        productName: 'Classpass',
         featuresArray: ["Fitness", "Wellness", "Sports"],
-        url: 'classpass'
+        url:'classpass'
     },
     {
-        picture: productsPictures.analyticsPicture, 
-        productName: 'Block Six Analytics', 
+        picture: productsPictures.analyticsPicture,
+        productName: 'Block Six Analytics',
         featuresArray: ["Sports", "Analytics", "Machine Learning"],
-        url: 'bsixanalytics'
+        url:'blocksixanalytics'
     },
     {
-        picture: productsPictures.walkliPicture, 
-        productName: 'Walkli', 
+        picture: productsPictures.walkliPicture,
+        productName: 'Walkli',
         featuresArray: ["Fitness", "Wellness", "Sports"],
-        url: 'walkli'
+        url:'walkli'
     },
     {
-        picture: productsPictures.taproomPicture, 
-        productName: 'Taproom', 
+        picture: productsPictures.taproomPicture,
+        productName: 'Taproom',
         featuresArray:["Social Media"],
-        url: 'taproom'
+        url:'taproom'
     },
     {
-        picture: productsPictures.ritualPicture, 
-        productName: 'Ritual', 
+        picture: productsPictures.ritualPicture,
+        productName: 'Ritual',
         featuresArray:["Wellness"],
-        url: 'ritual'
+        url:'ritual'
     },
     {
-        picture: productsPictures.mbamissionPicture, 
-        productName: 'MbaMission', 
+        picture: productsPictures.mbamissionPicture,
+        productName: 'MbaMission',
         featuresArray: ["Education, Professional Services"],
-        url: 'mbamission'
+        url:'mbamission'
     },
 ]
 
