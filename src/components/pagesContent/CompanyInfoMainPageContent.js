@@ -40,8 +40,8 @@ const ProductsLogo = () => {
 
 const breakPoints = [
     { width: 500, itemsToShow: 1 },
-    { width: 750, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 1200, itemsToShow: 3, itemsToScroll: 3 },
+    { width: 600, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 1000, itemsToShow: 3, itemsToScroll: 3 },
 ];
 
 const CompanyInfoMainPageContent = () => {
