@@ -351,7 +351,7 @@ export const cases = [
     {
         picture: productsPictures.mbamissionPicture,
         productName: 'MbaMission',
-        featuresArray: ["Education, Professional Services"],
+        featuresArray: ["Education", "Professional Services"],
         url:'mbamission'
     },
 ]
