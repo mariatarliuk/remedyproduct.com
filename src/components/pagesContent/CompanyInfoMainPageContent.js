@@ -39,8 +39,8 @@ const ProductsLogo = () => {
 }
 
 const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 500, itemsToShow: 1 },
+    { width: 750, itemsToShow: 2, itemsToScroll: 2 },
     { width: 1200, itemsToShow: 3, itemsToScroll: 3 },
 ];
 
@@ -48,11 +48,12 @@ const CompanyInfoMainPageContent = () => {
     const myArrow = ({ type, onClick, isEdge }) => {
         const pointer = type === consts.PREV ? 'buttonArrow buttonArrowLeft' : 'buttonArrow buttonArrowRight'
         return (
-          <Button onClick={onClick} disabled={isEdge} className="btn-light bg-transparent border-none">
+          <Button onClick={onClick} disabled={isEdge} className="btn-light bg-transparent border-none p-0">
              <Image src={learnMoreIcons.arrow} alt="arrow" className={pointer}/>
           </Button>
         )
     }
+
     return (
         <>
         <Container fluid>
@@ -87,7 +88,7 @@ const CompanyInfoMainPageContent = () => {
                         <h2>OUR WORK</h2>
                     </Link>
                 </Container>
-                <Container fluid className="d-flex flex-wrap justify-content-center">
+                <Container fluid className="d-flex flex-wrap justify-content-center carouselContainer">
                     <Carousel renderArrow={myArrow} breakPoints={breakPoints} focusOnSelect={true}>
                         {cases.map((item, index) => (
                             <ProductPictureBlock
