@@ -16,7 +16,6 @@ const Project = ({path, location}) => {
         walkli: {...walkliData},
         bsixanalytics: {...b6aData}
     }
-    console.log(location.pathname)
     return (
         <CaseLayout data={dataIn[location.pathname.replace('/cases/', '')]} location={location}/>
     )

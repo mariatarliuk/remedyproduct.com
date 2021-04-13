@@ -1,5 +1,5 @@
 .ourWorkContainer {
-    padding-top: 60px;
+    padding: 60px 0px 0px 0px;
 }
 
 .card {
@@ -91,6 +91,20 @@
     letter-spacing: 0.2px;
 }
 
+@media screen and (max-width: 935px) {
+    .card-body {
+        padding: 1.25rem 0em 0.5em;
+    }
+
+    .card-text {
+        padding: 18px 0 18px 7px;
+    }
+
+    .projectFeaturesItem {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 531px) {
     .rec.rec-arrow {
         width: 40px;
@@ -99,5 +113,24 @@
         line-height: 35px;
     }
 
+    .rec-slider-container {
+        margin: 0;
+    }
+
+    .carouselContainer {
+        padding: 0;
+    }
+
+    .caseImg {
+        width: 390px;
+    }
+
+    .caseTitle {
+        font-size: 23px;
+    }
+
+    .projectFeaturesItem {
+        font-size: 11px;
+    }
 }
 

@@ -25,7 +25,6 @@ function iconsList(techologies) {
 }
 
 const ProjectPageTemplate = ({data}) => {
-    console.log(data,'projpagetemp')
     return (
         <>
             <div
