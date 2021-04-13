@@ -15,7 +15,7 @@ const CasesList = () => {
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </div> 
             <Container>
                 <Row className="d-flex justify-content-center">
                     {cases.map((item, index) => (
@@ -25,6 +25,7 @@ const CasesList = () => {
                             featuresArray={item.featuresArray}
                             width='20rem'
                             key={index}
+                            url={item.url}
                         />
                     ))}
                 </Row>

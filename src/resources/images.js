@@ -54,7 +54,6 @@ import startupsPictureTwo from '../images/pictures/startups-picture-2.png';
 
 import investmentPicture from '../images/pictures/investment-picture.png';
 
-
 import reactIcon from '../images/logo/tools/react.svg';
 import awsIcon from '../images/logo/tools/aws.svg';
 import firebaseIcon from '../images/logo/tools/firebase.svg';
@@ -84,13 +83,11 @@ import phpLogo from '../images/logo/tools/php.svg'
 import pythonLogo from '../images/logo/tools/python.svg'
 import reactLogo from '../images/logo/tools/react.svg'
 
-
 export const commonIcons = {
     remedyIcon
 }
 
 export const productsAvatars = {
-
     b6aCeoAvatar: b6aCeoAvatar,
     walkliCeoAvatar: walkliCeoAvatar,
     ritualHeadAvatar: ritualHeadAvatar,
@@ -102,17 +99,14 @@ export const productsPictures = {
     analyticsPicture,
     classpassPicture,
     walkliPicture,
+    ritualPicture,
+    taproomPicture,
+    mbamissionPicture,
     classpassIntro,
     b6aIntro,
     walkliIntro,
     vendInfo,
-    classpassInfo,
-    b6aCeoAvatar,
-    walkliCeoAvatar,
-    mbamissionPicture,
-    taproomPicture,
-    ritualPicture,
-
+    classpassInfo
 }
 
 export const serviceIcons = {

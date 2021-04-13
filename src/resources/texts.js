@@ -319,34 +319,41 @@ export const startupsTexts = [
 
 export const cases = [
     {
-        picture: productsPictures.classpassPicture,
-        productName: 'Classpass',
-        featuresArray: ["Fitness", "Wellness", "Sports"]
+        picture: productsPictures.classpassPicture, 
+        productName: 'Classpass', 
+        featuresArray: ["Fitness", "Wellness", "Sports"],
+        url: 'classpass'
     },
     {
-        picture: productsPictures.analyticsPicture,
-        productName: 'Block Six Analytics',
-        featuresArray: ["Sports", "Analytics", "Machine Learning"]
+        picture: productsPictures.analyticsPicture, 
+        productName: 'Block Six Analytics', 
+        featuresArray: ["Sports", "Analytics", "Machine Learning"],
+        url: 'bsixanalytics'
     },
     {
-        picture: productsPictures.walkliPicture,
-        productName: 'Walkli',
-        featuresArray: ["Fitness", "Wellness", "Sports"]
+        picture: productsPictures.walkliPicture, 
+        productName: 'Walkli', 
+        featuresArray: ["Fitness", "Wellness", "Sports"],
+        url: 'walkli'
     },
     {
-        picture: productsPictures.taproomPicture,
-        productName: 'Taproom',
-        featuresArray:["Social Media"]
+        picture: productsPictures.taproomPicture, 
+        productName: 'Taproom', 
+        featuresArray:["Social Media"],
+        url: 'taproom'
     },
     {
-        picture: productsPictures.ritualPicture,
-        productName: 'Ritual',
-        featuresArray:["Wellness"]
+        picture: productsPictures.ritualPicture, 
+        productName: 'Ritual', 
+        featuresArray:["Wellness"],
+        url: 'ritual'
     },
     {
-        picture: productsPictures.mbamissionPicture,
-        productName: 'MbaMission',
-        featuresArray: ["Education, Professional Services"]},
+        picture: productsPictures.mbamissionPicture, 
+        productName: 'MbaMission', 
+        featuresArray: ["Education, Professional Services"],
+        url: 'mbamission'
+    },
 ]
 
 export const projectsInfo = {

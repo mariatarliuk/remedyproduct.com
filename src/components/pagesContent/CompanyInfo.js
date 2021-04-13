@@ -15,10 +15,10 @@ export function featuresList(featuresArray) {
     })
 }
 
-function ProductPictureBlock({productName, picture, featuresArray, width}) {
+function ProductPictureBlock({productName, picture, featuresArray, width, url}) {
     return (
         <Card style={{width: width, overflow: 'hidden'}} className={`ml-3 mr-3 mt-5`}>
-            <Link to={`/cases/taproom`} className="caseLink">
+            <Link to={`/cases/${url}`} className="caseLink">
                 <Card.Img variant="top" src={picture} className="caseImg"/>
             </Link>
             <Card.Body>
