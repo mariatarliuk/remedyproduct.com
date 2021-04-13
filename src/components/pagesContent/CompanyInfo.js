@@ -8,7 +8,7 @@ export function featuresList(featuresArray) {
         return (
             <span
                 key={elem + index}
-                className="projectFeaturesItem mr-2 mt-1">
+                className="projectFeaturesItem mt-1">
                 {elem}
             </span>
         )
