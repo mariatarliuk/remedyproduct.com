@@ -70,7 +70,7 @@ import krukPhoto from '../images/photos/OlegKrook.png';
 import zaytsevIcon from '../images/avatars/employees/SergeyZaytsev.svg';
 import zaytsevPhoto from '../images/photos/SergeyZaytsev.png';
 import kuzmichIcon from '../images/avatars/employees/SergeyKuzmich.svg';
-import kuzmichPhoto from '../images/photos/SergeyKuzmich.jpg';
+import kuzmichPhoto from '../images/photos/SergeyKuzmich.png';
 
 import androidLogo from '../images/logo/tools/android.svg'
 import angularLogo from '../images/logo/tools/angular.svg'
