@@ -3,6 +3,8 @@ import {Container, Row, Col, Nav, Image, Card} from 'react-bootstrap';
 import '../../styles/mainPageContent.css';
 import {learnMoreIcons} from "../../resources/images.js";
 import {cardsItems} from "../../resources/texts";
+import {Link} from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const CardItem = ({title, text, image}) => {
     return (
@@ -24,39 +26,44 @@ const CardItem = ({title, text, image}) => {
 const MainContent = () => {
     return (
         <div className="mainContainer position-relative">
-        <div className="heroContainer position-relative">
-            <div className="heroBg position-absolute"/>
-            <div className="mainBg position-absolute"/>
-            <div className="hero pt-5">
-                <Container className="mainTextContainer d-flex flex-column justify-content-center align-items-center ">
-                    <div className="titleContent">
-                        <Row>
-                            <Col className="mainText mb-4" lg={9} xs={12}>
-                                Remedy product studio is a product partner
+            <div className="heroContainer position-relative">
+                <div className="heroBg position-absolute"/>
+                <div className="mainBg position-absolute"/>
+                <div className="hero pt-5">
+                    <Container
+                        className="mainTextContainer d-flex flex-column justify-content-center align-items-center ">
+                        <div className="titleContent">
+                            <Row>
+                                <Col className="mainText mb-4" lg={9} xs={12}>
+                                    Remedy product studio is a product partner
+                                </Col>
+                            </Row>
+                            <Row className="linksWork">
+                                <Col className="p-2 mb-3">
+                                    <Nav.Link href="mailto:Hello@remedyproduct.com" className="linkText">Work with
+                                        us</Nav.Link>
+                                </Col>
+                            </Row>
+                        </div>
+                        <Row className="arrowLink position-absolute">
+                            <Col>
+                                <Nav.Link as={Link}
+                                          to='#learnMore'
+                                          onClick={() => scrollTo('#learnMore')}>
+                                    <Image src={learnMoreIcons.arrow} alt="arrow"/>
+                                </Nav.Link>
                             </Col>
                         </Row>
-                        <Row className="linksWork">
-                            <Col className="p-2 mb-3">
-                                <Nav.Link href="mailto:Hello@remedyproduct.com" className="linkText">Work with us</Nav.Link>
-                            </Col>
-                        </Row>
-                    </div>
-                    <Row className="arrowLink position-absolute">
-                        <Col>
-                            <Nav.Link href="#learnMore">
-                                <Image src={learnMoreIcons.arrow} alt="arrow"/>
-                            </Nav.Link>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                    </Container>
+                </div>
 
-        </div>
-        <div className="mainContent position-relative">
+            </div>
+            <div className="mainContent position-relative">
                 <Container>
                     <Row>
                         <Col className="blueBackText mt-0" id="learnMore">
-                            Supporting founders and established companies in creating the next generation of great digital products
+                            Supporting founders and established companies in creating the next generation of great
+                            digital products
                         </Col>
                     </Row>
                 </Container>
@@ -72,7 +79,7 @@ const MainContent = () => {
                 <div className="backgroundTop position-absolute"/>
                 <div className="backgroundBottom position-absolute left-0 "/>
             </div>
-    </div>
+        </div>
     )
 }
 

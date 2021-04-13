@@ -1,22 +1,22 @@
 @font-face {
-    font-family: "CamphorPro"; 
-    src: url("./fonts/CamphorPro/CamphorPro-Light.otf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-family: "CamphorPro";
+    src: url("./fonts/CamphorPro/CamphorPro-Light.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: "CamphorProBold"; 
-    src: url("./fonts/CamphorPro/CamphorPro-Medium.otf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-family: "CamphorProBold";
+    src: url("./fonts/CamphorPro/CamphorPro-Medium.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'CamphorPro', sans-serif;
 }
 
