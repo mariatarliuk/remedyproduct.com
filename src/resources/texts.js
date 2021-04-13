@@ -149,13 +149,13 @@ export const ritualData = {
     logo: productsLogo.ritualLogo,
     features: ["Wellness"],
     introText: "Ritual is a cross-platform mobile application with a range of audio guided practices that can help " +
-                "boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range " +
-                "of expert-guided wellbeing practices to find what works for each user. The app collaborates with renowned " +
-                "scientific, spiritual and cultural leaders to build their wisdom into guided audio experiences",
+        "boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range " +
+        "of expert-guided wellbeing practices to find what works for each user. The app collaborates with renowned " +
+        "scientific, spiritual and cultural leaders to build their wisdom into guided audio experiences",
     productTeam: ["1 backend developer", "1 frontend developer", "1 designer", "1 product manager"],
     fundingStage: ["Pre-Seed to Seed"],
     techologies: [techologiesIcon.reactIcon, 'React Native', 'FastApi', 'GraphQL', techologiesIcon.terraformIcon,
-                techologiesIcon.awsIcon],
+        techologiesIcon.awsIcon],
     testimonials: {
         avatar: productsAvatars.ritualHeadAvatar,
         name: "Dante Doig-Acuña",
@@ -167,16 +167,16 @@ export const ritualData = {
     },
     challengeText: "Ritual engaged RPS to build a minimum viable product (MVP) in 3 months to receive seed funding.",
     solutionsTexst: "RPS focused on the development of a mobile app and a flexible CMS system. Ritual successfully raised " +
-                    "a seed round led by PivotNorth Capital.",
+        "a seed round led by PivotNorth Capital.",
     results: ["RPS released the first version of the iOS platform and CMS app after 3 months. The team focused on gathering " +
-            "qualitative and quantitative user feedback to inform the product roadmap. Over the next 6 months the team added " +
-            "new features, improved existing features, and released an Android app.",
-            "Ritual started working with RPS in August 2019 and has built a strong integrated partnership. The combined team " +
-            "continues to work together on new feature development to continue to create a deeper well being experience, " +
-            "grow the user base, and expand the expert community. In addition to software development, RPS is heavily involved " +
-            "in improving feedback tools and methodologies to engage users and create the best possible experience."],
+    "qualitative and quantitative user feedback to inform the product roadmap. Over the next 6 months the team added " +
+    "new features, improved existing features, and released an Android app.",
+        "Ritual started working with RPS in August 2019 and has built a strong integrated partnership. The combined team " +
+        "continues to work together on new feature development to continue to create a deeper well being experience, " +
+        "grow the user base, and expand the expert community. In addition to software development, RPS is heavily involved " +
+        "in improving feedback tools and methodologies to engage users and create the best possible experience."],
     businessImpactText: "Ritual raised a seed round led by Tim Connors (Midas List #95) of PivotNorth Capital. The team is " +
-                        "seeing consistent user growth, increased user engagement, and revenue growth via subscriptions."
+        "seeing consistent user growth, increased user engagement, and revenue growth via subscriptions."
 }
 
 export const mbamissionData = {
@@ -186,34 +186,34 @@ export const mbamissionData = {
     logo: productsLogo.mbaMissionLogo,
     features: ["Education", "Professional Services"],
     introText: "Holistic Health International is a medical diagnostics and supplements company founded by Dr. Amy Yasko, " +
-            "Microbiology/Immunology/Infectious Disease specialist and Doctor of Natural Health. Holistic Health specializes " +
-            "in neurological research and the treatment of brain diseases using the Yasko Protocol, including holistic " +
-            "treatment, alternative therapies, and custom supplements.",
+        "Microbiology/Immunology/Infectious Disease specialist and Doctor of Natural Health. Holistic Health specializes " +
+        "in neurological research and the treatment of brain diseases using the Yasko Protocol, including holistic " +
+        "treatment, alternative therapies, and custom supplements.",
     productTeam: ["1 backend developer", "1 frontend developer", "1 product manager"],
     fundingStage: ["Bootstrapped (not venture funded)"],
     techologies: [techologiesIcon.phpIcon, 'Javascript', ' Slim', 'Laravel', 'MongoDB', techologiesIcon.terraformIcon,
-                techologiesIcon.awsIcon],
+        techologiesIcon.awsIcon],
     testimonials: {
         avatar: productsAvatars.mbamissionDirectorAvatar,
         name: "Aimee Lukin",
         position: "Director of Marketing and Operations",
         comment: "\"Remedy has helped us create and maintain several custom systems to streamline our consulting business. " +
-                "As a company with a small team and unique needs, we have relied on RPS every step of the way. They have " +
-                "consistently listened to our pain points and come up with creative solutions. We have always appreciated " +
-                "their honesty and willingness to work within our budgets. They have been an important partner of ours for " +
-                "many years and we fully trust them with our technology needs. \""
+            "As a company with a small team and unique needs, we have relied on RPS every step of the way. They have " +
+            "consistently listened to our pain points and come up with creative solutions. We have always appreciated " +
+            "their honesty and willingness to work within our budgets. They have been an important partner of ours for " +
+            "many years and we fully trust them with our technology needs. \""
     },
     challengeText: "RPS was asked to build and maintain a flexible system for managing the e-commerce platform and a powerful " +
-                    "dashboard for managing business needs.",
+        "dashboard for managing business needs.",
     solutionsTexst: "RPS developed a Billing and Consultant Solutions dashboard that allowed for deeper integration with the " +
-                    "Shopify e-commerce platform.",
+        "Shopify e-commerce platform.",
     results: ["The CRM system is used for processing purchases and managing consultants’ workflow. The solution allows " +
-            "mbaMission administrators and MBA consultants to set availability, track progress, manage their customers, " +
-            "and process payments."],
+    "mbaMission administrators and MBA consultants to set availability, track progress, manage their customers, " +
+    "and process payments."],
     businessImpactText: "Today mbaMission is the number-one-ranked firm on GMAT Club, with more than 1,000 five-star reviews. " +
-                        "mbaMission was named the number one business school admissions consulting firm by Poets&Quants in " +
-                        "2019. The technical solution has allowed mbaMission to scale revenue while keeping operational costs " +
-                        "low, resulting in a sustainable cash-flow positive company."
+        "mbaMission was named the number one business school admissions consulting firm by Poets&Quants in " +
+        "2019. The technical solution has allowed mbaMission to scale revenue while keeping operational costs " +
+        "low, resulting in a sustainable cash-flow positive company."
 }
 
 export const taproomData = {
@@ -223,30 +223,31 @@ export const taproomData = {
     logo: productsLogo.tapRoomLogo,
     features: ["Social Media"],
     introText: "TapRoom is a mobile app that allows users to videochat in digital versions of real world venues and bars. " +
-            "Users can network, hang out, or learn something in a digital home for their real-world community.",
+        "Users can network, hang out, or learn something in a digital home for their real-world community.",
     productTeam: ["1 full-stack developer", "1 product manager"],
     fundingStage: ["Friends & Family"],
     techologies: [techologiesIcon.reactIcon, techologiesIcon.firebaseIcon, 'Twilio', techologiesIcon.googleMapsIcon,
-                'Google Places API'],
+        'Google Places API'],
     testimonials: {
         avatar: productsAvatars.taproomCeoAvatar,
         name: "Rob Resnick",
         position: "Founder & CEO",
         comment: "\"The team at Remedy was incredible.  They were not only fast and dedicated, but as a first time founder " +
-                "I was a little all over the place. They were patient, introduced helpful methodology, and kept everything " +
-                "organized. They were a true partner! I found myself looking forward to our calls, and the product turned out "+
-                "just as I'd imagined it.\""},
+            "I was a little all over the place. They were patient, introduced helpful methodology, and kept everything " +
+            "organized. They were a true partner! I found myself looking forward to our calls, and the product turned out " +
+            "just as I'd imagined it.\""
+    },
     challengeText: "TapRoom engaged RPS to build a minimum viable product (MVP) to launch early, gather feedback, and iterate " +
-                "quickly. Taproom relied on Remedy for leading product strategy, implementing agile development practices, " +
-                "and gathering user feedback.",
+        "quickly. Taproom relied on Remedy for leading product strategy, implementing agile development practices, " +
+        "and gathering user feedback.",
     solutionsTexst: "RPS implemented a lean development process, focusing on keeping a tight initial feature scope. RPS built " +
-                "a cross-platform mobile application, starting with an iOS release.",
+        "a cross-platform mobile application, starting with an iOS release.",
     results: ["RPS released an Alpha version of the iOS application in 3 weeks. The team continuously gathered user feedback " +
-            "and iterated, releasing updates with new features. After 3 months, we released an open beta to the iOS app store. " +
-            "An Android application was released shortly thereafter."],
+    "and iterated, releasing updates with new features. After 3 months, we released an open beta to the iOS app store. " +
+    "An Android application was released shortly thereafter."],
     businessImpactText: "The application received high ratings and positive reviews. In particular, user testimonials raved " +
-                    "about the idea, the look & feel of the app, and novel features, like Whisper. The app has seen user " +
-                    "adoption, including large community meetups and networking events."
+        "about the idea, the look & feel of the app, and novel features, like Whisper. The app has seen user " +
+        "adoption, including large community meetups and networking events."
 }
 
 export const cardsItems = [
@@ -322,37 +323,37 @@ export const cases = [
         picture: productsPictures.classpassPicture,
         productName: 'Classpass',
         featuresArray: ["Fitness", "Wellness", "Sports"],
-        url:'classpass'
+        url: 'classpass'
     },
     {
         picture: productsPictures.analyticsPicture,
         productName: 'Block Six Analytics',
         featuresArray: ["Sports", "Analytics", "Machine Learning"],
-        url:'blocksixanalytics'
+        url: 'blocksixanalytics'
     },
     {
         picture: productsPictures.walkliPicture,
         productName: 'Walkli',
         featuresArray: ["Fitness", "Wellness", "Sports"],
-        url:'walkli'
+        url: 'walkli'
     },
     {
         picture: productsPictures.taproomPicture,
         productName: 'Taproom',
-        featuresArray:["Social Media"],
-        url:'taproom'
+        featuresArray: ["Social Media"],
+        url: 'taproom'
     },
     {
         picture: productsPictures.ritualPicture,
         productName: 'Ritual',
-        featuresArray:["Wellness"],
-        url:'ritual'
+        featuresArray: ["Wellness"],
+        url: 'ritual'
     },
     {
         picture: productsPictures.mbamissionPicture,
         productName: 'MbaMission',
         featuresArray: ["Education", "Professional Services"],
-        url:'mbamission'
+        url: 'mbamission'
     },
 ]
 
@@ -430,13 +431,12 @@ export const employeesInfo = [
         photo: employeesImages.kuzmichPhoto,
         avatar: employeesImages.kuzmichIcon,
         position: 'Director of Engineering',
-        intro: 'Product manager with a sales background and master’s degree in computer science. Experience with small ' +
-            'and big size projects (from 2 to 8 people). Before Egor came to product management, he had been working ' +
-            'hard in sales for two years. Later he decided to devote his life to product management, and that he does up' +
-            ' to this days. Egor has 6 years of total experinece.',
-        interests: ['Product Development', 'Risk Management', 'Board and Computer Games', 'Sports Mafia', 'Snowboarding'],
+        intro: 'Web Engineer with 10 years of experience. Sergey is in love with web technologies and services. Another ' +
+            'passion is development and deployment automatization.',
+        interests: ['Gaming', 'Driving', 'Media Creation'],
         methodologies: 'Agile, Waterfall, Kanban',
-        expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
+        expertise: ['Back-end & DevOps engineering', 'SaaS solutions', 'Processes automatization',
+            'Private CRM tools'],
         projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.vend],
         tools: [toolsLogo.firebaseLogo, toolsLogo.kotlinLogo, toolsLogo.reactLogo, toolsLogo.html5Logo,
             toolsLogo.phpLogo, toolsLogo.androidLogo, toolsLogo.iosLogo]
