@@ -4,7 +4,6 @@ import Link from "gatsby-link";
 import "../../styles/companyInfo.css";
 
 export function featuresList(featuresArray) {
-    console.log(featuresArray)
     return featuresArray.map((elem, index) => {
         return (
             <span
