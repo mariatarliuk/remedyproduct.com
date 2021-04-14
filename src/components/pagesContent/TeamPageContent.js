@@ -3,7 +3,7 @@ import {Accordion, Card, Col, Container, Image, ListGroup, Row} from "react-boot
 import {employeesInfo} from "../../resources/texts";
 import {featuresList} from "./CompanyInfo";
 import "../../styles/teamPage.css"
-import arrowDown from '../../images/icons/arrowDown.svg'
+import arrowDown from '../../../static/images/icons/arrowDown.svg'
 
 const TeamPageContent = () => {
     const [currentEmployee, setCurrentEmployee] = useState(employeesInfo[0])
