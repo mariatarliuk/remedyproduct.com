@@ -41,7 +41,7 @@ module.exports = {
                 background_color: '#663399',
                 theme_color: '#663399',
                 display: 'minimal-ui',
-                icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+                icon: 'static/images/favicon.png', // This path is relative to the root of the site.
             },
         },
         'gatsby-transformer-sharp',
@@ -51,7 +51,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'images',
-                path: `${__dirname}/src/images`,
+                path: `${__dirname}/static/images`,
             },
         },
     ],
