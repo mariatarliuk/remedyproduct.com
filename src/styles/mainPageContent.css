@@ -35,7 +35,7 @@ a:hover {
 }
 
 .mainBg {
-    background-image: url('../images/backgrounds/main_bg.svg');
+    background-image: url('../../static/images/backgrounds/main_bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 50%;
@@ -81,7 +81,7 @@ a:hover {
 }
 
 .mainContent {
-    background-image: url('../images/backgrounds/blue_background.svg');
+    background-image: url('../../static/images/backgrounds/blue_background.svg');
     width: 100%;
     z-index: 200;
 }
@@ -132,8 +132,7 @@ a:hover {
     height: 20%;
     border-bottom: 7px solid #acccfb;
     background-color: #5a9af9;
-    background-image: url('../images/backgrounds/blue_background.svg');
-    z-index: 10;
+    background-image: url('../../static/images/backgrounds/blue_background.svg');
 }
 
 .backgroundBottom {

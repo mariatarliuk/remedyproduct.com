@@ -1,4 +1,5 @@
 const path = require('path')
+const cases = require("./src/resources/cases.json")
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -17,7 +18,15 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  pages.data.allPrismicPost.nodes.forEach((page) => {
+  cases.forEach(page => {
+    createPage({
+      path: page.url,
+      component: path.resolve(__dirname, 'src/pages/project.js'),
+      context: {...page},
+    })
+  })
+
+  pages.data.allPrismicPost.nodes.forEach(page => {
     createPage({
       path: page.url,
       component: path.resolve(__dirname, 'src/templates/Post.js'),
@@ -25,3 +34,4 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
+
