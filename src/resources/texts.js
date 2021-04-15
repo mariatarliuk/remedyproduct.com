@@ -1,12 +1,9 @@
 import {
     productsPictures,
-    productsLogo,
-    productsAvatars,
     learnMoreIcons,
     startupsIcons,
     toolsLogo,
     employeesImages,
-    techologiesIcon
 } from "./images"
 
 export const cardsItems = [
@@ -37,7 +34,7 @@ export const invesmentTexts = [
         body: 'We help startups prepare for fundraising by crafting the narrative, preparing the pitch, and ensuring you can demonstrate product-market fit. We actively connect startups with angels and venture capitalists in our network. During the fundraising process we help with deck preparation, pitch practice, and technical due diligence.'
     },
     {
-        title: 'Looking for a Technical Co-Founder?',
+        title: 'Who do we cooperate with?',
         body: 'On a limited basis, Remedy co-founds companies with talented entrepreneurs who are looking for a technical co-founder. Ideal Founders for this program are industry experts that have a competitive advantage in a large market.'
     },
     {

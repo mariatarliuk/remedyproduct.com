@@ -7,9 +7,9 @@ import {invesmentTexts} from "../../resources/texts";
 const InvestmentItem = () => {
     return (
         invesmentTexts.map((item, index, i) => (
-            <Col md={12} lg={6} className="pb-4 pr-5 pl-5" key={item.title + index}>
+            <Col md={12} lg={5} className="pb-4" key={item.title + index}>
                 <Row className="mb-4">
-                    <Col className={item.title.length > 26 ? "investHeading d-flex align-items-center col-8" : "investHeading d-flex align-items-center col-6"}>
+                    <Col className={item.title.length > 24 ? "investHeading d-flex align-items-center col-8" : "investHeading d-flex align-items-center col-6"}>
 
                         {item.title.toUpperCase()}
                     </Col>
