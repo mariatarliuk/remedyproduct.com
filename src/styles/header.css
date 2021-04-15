@@ -49,15 +49,15 @@
     border: none;
 }
 
-/*@media screen and (max-width: 991px) {*/
-/*!*    .link {*!*/
-/*!*        border-bottom: 1px solid #f1f6ff;*!*/
-/*!*    }*!*/
+@media screen and (max-width: 991px) {
+    .link {
+        border-bottom: 1px solid #f1f6ff;
+    }
 
-/*!*    .link:last-child {*!*/
-/*!*        border-bottom: none;*!*/
-/*!*    }*!*/
-/*!*}*!*/
+    .link:last-child {
+        border-bottom: none;
+    }
+}
 
 /*@media screen and (max-width: 1200px) {*/
 /*    .navbar-light .navbar-nav .nav-link {*/
