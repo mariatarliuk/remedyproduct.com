@@ -57,6 +57,14 @@
     background-color: transparent;
 }
 
+.btn-light:not(:disabled):not(.disabled):active {
+    border-color: transparent;
+}
+
+.btn-light:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
 .buttonArrow {
     background-color: transparent;
     border: none;

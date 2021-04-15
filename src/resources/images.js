@@ -51,6 +51,7 @@ import threeIcon from '../../static/images/icons/startups/pic-3.svg';
 import fourIcon from '../../static/images/icons/startups/pic-4.svg';
 import startupsPictureOne from '../../static/images/pictures/startups-picture-1.png';
 import startupsPictureTwo from '../../static/images/pictures/startups-picture-2.png';
+import startupsPictureThree from '../../static/images/pictures/startups-picture-3.png';
 
 import investmentPicture from '../../static/images/pictures/investment-picture.png';
 
@@ -148,7 +149,8 @@ export const startupsIcons = {
     threeIcon,
     fourIcon,
     startupsPictureOne,
-    startupsPictureTwo
+    startupsPictureTwo,
+    startupsPictureThree,
 }
 
 export const investmentIcon = {

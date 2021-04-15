@@ -65,18 +65,18 @@ const ProjectPageTemplate = ({data}) => {
                         }
                     </Col>
                     <Col lg={6} md={12} className="mainContentProject">
-                        <h4 className="mt-4 mb-3">Challenge</h4>
+                        <h4 className="mt-4 mb-2">Challenge</h4>
                         <p className="infoText text-justify">{data.challengeText}</p>
-                        <h4 className="mt-4 mb-3">Solutions</h4>
+                        <h4 className="mt-4 mb-2">Solutions</h4>
                         <p className="infoText text-justify">{data.solutionsTexst}</p>
-                        <h4 className="mt-4 mb-3">Results</h4>
+                        <h4 className="mt-4 mb-2">Results</h4>
                         <ul className="list-group" style={{listStyleType: "none"}}>
                             {data.results && data.results.map((elem, index) => {
                                 return <li key={index} className="text-justify">{elem}</li>
                             })}
                         </ul>
-                        <h4 className="mt-3">Business Impact</h4>
-                        <p className="infoText mt-4 text-justify">{data.businessImpactText}</p>
+                        <h4 className="businessText mb-2">Business Impact</h4>
+                        <p className="infoText text-justify">{data.businessImpactText}</p>
                     </Col>
                     <Col lg={3} md={12} className="devInfo">
                         <h5 className="mt-4 mb-3">Product Team</h5>

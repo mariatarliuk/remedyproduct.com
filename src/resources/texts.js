@@ -104,12 +104,49 @@ export const casesData = [
     },
 
     {
+        introImage: productsPictures.ritualPicture,
+        site: "ritual.io",
+        url:"ritual",
+        siteLink: "https://www.ritual.io/",
+        logo: productsLogo.ritualLogo,
+        features: ["Wellness", "Mental Health", "Education"],
+        introText: "Ritual is a cross-platform mobile application with a range of audio guided practices that can help " +
+            "boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range " +
+            "of expert-guided wellbeing practices to find what works for each user. The app collaborates with renowned " +
+            "scientific, spiritual and cultural leaders to build their wisdom into guided audio experiences",
+        productTeam: ["1 backend developer", "1 frontend developer", "1 designer", "1 product manager"],
+        fundingStage: ["Pre-Seed to Seed"],
+        techologies: [techologiesIcon.reactIcon, 'React Native', 'FastApi', 'GraphQL', techologiesIcon.terraformIcon,
+            techologiesIcon.awsIcon],
+        testimonials: {
+            avatar: productsAvatars.ritualHeadAvatar,
+            name: "Dante Doig-Acuña",
+            position: "Head of Product",
+            comment: "\"For an early startup like us, working with RPS has been a game-changer. I’d worked with engineering " +
+                "agencies in the past, and RPS went so far beyond that. The RPS team has been a key part of product, design, " +
+                "and even growth strategy, from the very beginning. This is a crew of startup veterans, so our pace has been " +
+                "quick and agile but our infrastructure is built to scale. We couldn’t be happier with this partnership.\""
+        },
+        challengeText: "Ritual engaged RPS to build a minimum viable product (MVP) in 3 months to receive seed funding.",
+        solutionsTexst: "RPS focused on the development of a mobile app and a flexible CMS system. Ritual successfully raised " +
+            "a seed round led by PivotNorth Capital.",
+        results: ["RPS released the first version of the iOS platform and CMS app after 3 months. The team focused on gathering " +
+        "qualitative and quantitative user feedback to inform the product roadmap. Over the next 6 months the team added " +
+        "new features, improved existing features, and released an Android app.",
+            "Ritual started working with RPS in August 2019 and has built a strong integrated partnership. The combined team " +
+            "continues to work together on new feature development to continue to create a deeper well being experience, " +
+            "grow the user base, and expand the expert community. In addition to software development, RPS is heavily involved " +
+            "in improving feedback tools and methodologies to engage users and create the best possible experience."],
+        businessImpactText: "Ritual raised a seed round led by Tim Connors (Midas List #95) of PivotNorth Capital. The team is " +
+            "seeing consistent user growth, increased user engagement, and revenue growth via subscriptions."
+    },
+    {
         introImage: productsPictures.walkliIntro,
         site: "walkli.com",
         url:"walkli",
         siteLink: "https://walkli.com/",
         logo: productsLogo.walkliLogo,
-        features: ["Travel", "Hospitality", "Tourism"],
+        features: ["Travel", "Leisure", "Hospitality"],
         introText: "Walkli provides free walking routes for travelers exploring the world on foot in search of local, " +
             "authentic travel experiences. Maps are crowdsourced from locals, travelers, and bloggers to meet a wide variety" +
             " of interests from classical history to street art, from local dive bars to a city’s best Instagram spots.",
@@ -150,7 +187,7 @@ export const casesData = [
         url:"ritual",
         siteLink: "https://www.ritual.io/",
         logo: productsLogo.ritualLogo,
-        features: ["Wellness"],
+        features: ["Wellness", "Mental Health", "Education"],
         introText: "Ritual is a cross-platform mobile application with a range of audio guided practices that can help " +
             "boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range " +
             "of expert-guided wellbeing practices to find what works for each user. The app collaborates with renowned " +
@@ -224,7 +261,7 @@ export const casesData = [
     url:"taproom",
     siteLink: "https://www.taproom.app",
     logo: productsLogo.tapRoomLogo,
-    features: ["Social Media"],
+    features: ["Social Media", "Video Chat", "Community"],
     introText: "TapRoom is a mobile app that allows users to videochat in digital versions of real world venues and bars. " +
         "Users can network, hang out, or learn something in a digital home for their real-world community.",
     productTeam: ["1 full-stack developer", "1 product manager"],
@@ -293,7 +330,7 @@ export const invesmentTexts = [
 
 export const startupsTexts = [
     {
-        title: 'What should we build',
+        title: 'What should you build',
         name: 'strategy',
         image: startupsIcons.oneIcon,
         body: 'We will sit down with you to understand your long term goals, business objectives, KPI’s, and budget to create an effective strategy to take your product to market. Our extensive network allows us to make strategic introductions for our partners to VCs, potential clients, and other resources to accelerate growth.'
@@ -336,22 +373,22 @@ export const cases = [
         url: 'blocksixanalytics'
     },
     {
+        picture: productsPictures.ritualPicture,
+        productName: 'Ritual',
+        featuresArray: ["Wellness", "Mental Health", "Education"],
+        url: 'ritual'
+    },
+    {
         picture: productsPictures.walkliPicture,
         productName: 'Walkli',
-        featuresArray: ["Fitness", "Wellness", "Sports"],
+        featuresArray: ["Travel", "Leisure", "Hospitality"],
         url: 'walkli'
     },
     {
         picture: productsPictures.taproomPicture,
         productName: 'Taproom',
-        featuresArray: ["Social Media"],
+        featuresArray: ["Social Media", "Video Chat", "Community"],
         url: 'taproom'
-    },
-    {
-        picture: productsPictures.ritualPicture,
-        productName: 'Ritual',
-        featuresArray: ["Wellness"],
-        url: 'ritual'
     },
     {
         picture: productsPictures.mbamissionPicture,
