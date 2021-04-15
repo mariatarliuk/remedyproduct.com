@@ -1,8 +1,9 @@
 .investHeading {
-    font-size: 25px;
+    font-size: 24px;
     min-height: 4.5rem;
     line-height: 140%;
     letter-spacing: 0.2px;
+    font-family: 'CamphorProBold', sans-serif;
 }
 
 .introTextInvest {

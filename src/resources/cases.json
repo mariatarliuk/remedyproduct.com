@@ -70,7 +70,15 @@
       "QA Automation",
       "Technical Architecture"
     ],
-    "techologies": [],
+    "techologies": [
+      "/images/logo/tools/react.svg", 
+      "/images/logo/tools/php.svg", 
+      "/images/logo/tools/python.svg", 
+      "MySQL", 
+      "/images/logo/tools/aws.svg", 
+      "WebSockets", 
+      "Chef"
+    ],
     "testimonials": {
       "avatar": "/images/avatars/b6a-ceo-avatar.png",
       "name": "Adam Grossman",
@@ -88,62 +96,12 @@
     "businessImpactText": "Remedy worked with Block Six Analytics from 2012 through 2017. During this time Block Six Analytics raised a $2M Seed Round, led by Bowery Capital and follow-on funding from notable angel investors, including NBA superagent David Falk. B6A grew to service a multitude of sports properties and consumer brands, including the Detroit Lions, Wisconsin Badgers, and Marketcast."
   },
   {
-    "introImage": "/images/pictures/walkli-intro.svg",
-    "site": "walkli.com",
-    "url": "walkli",
-    "siteLink": "https://walkli.com/",
-    "logo": "/images/logo/products-logo/walkli-logo.svg",
-    "features": [
-      "Travel",
-      "Hospitality",
-      "Tourism"
-    ],
-    "introText": "Walkli provides free walking routes for travelers exploring the world on foot in search of local, authentic travel experiences. Maps are crowdsourced from locals, travelers, and bloggers to meet a wide variety of interests from classical history to street art, from local dive bars to a city’s best Instagram spots.",
-    "productTeam": [
-      "1 Backend developer",
-      "1 Frontend developer",
-      "1 part-time Product Manager",
-      "1 UX/UI Designer"
-    ],
-    "fundingStage": [
-      "Friends & Family"
-    ],
-    "services": [
-      "Backend Development",
-      "Frontend Development",
-      "iOS Development",
-      "API Development",
-      "Product Management",
-      "UX/UI Design",
-      "QA Automation",
-      "Technical Architecture",
-      "Venture Strategy"
-    ],
-    "techologies": [],
-    "testimonials": {
-      "avatar": "/images/avatars/walkli-ceo-avatar.png",
-      "name": "Jeff Peo",
-      "position": "Founder & CEO",
-      "comment": "\"I met with a number of development options – both on- and off-shore – before choosing to work with RPS.  What set them apart was their drive to understand my business and to help determine which features should be built out for the MVP vs. future releases.  This has really enabled me to accurately match my strategic planning with our technical development.\""
-    },
-    "challengeText": "Walkli did not raise pre-seed funding and was bootstrapped by its Founder. RPS needed to deliver a functional application within a limited budget and timeframe to allow walkli to prove its product/market fit and raise funding.",
-    "solutionsTexst": "After product roadmapping, feature scoping, and sizing, RPS and walkli agreed on the parameters and deliverables for the first release. RPS’ Product Manager led one week sprints to gauge team development velocity, before switching to two week sprints. \n Key Features & Integrations: google Maps API customization for custom map creation, admin system with CMS, rich content creation and viewing interfaces, city search functionality, user profiles, social media sharing",
-    "results": [
-      "- RPS released the first version of the web app after 3 months.",
-      "- Walkli has retained RPS for continued iteration and feature development since March 2016.",
-      "- Future development plans include the release of a mobile app using the web app’s framework."
-    ],
-    "businessImpactText": "After the launch of the MVP web app, walkli successfully raised a Friends & Family round. In addition to user growth, walkli successfully launched a travel blogger content partnership program. They secured numerous travel and hospitality clients, including Westin Hotels, Hostelling international, the Amsterdam tourism board, and Croatia tourism board. Walkli was selected as a MassChallenge 2018 finalist."
-  },
-  {
     "introImage": "/images/pictures/ritual-picture.png",
     "site": "ritual.io",
     "url": "ritual",
     "siteLink": "https://www.ritual.io/",
     "logo": "/images/logo/products-logo/ritual-logo.svg",
-    "features": [
-      "Wellness"
-    ],
+    "features": ["Wellness", "Mental Health", "Education"],
     "introText": "Ritual is a cross-platform mobile application with a range of audio guided practices that can help boost and sustain wellbeing. Rather than focusing on a single practice, Ritual shares a diverse range of expert-guided wellbeing practices to find what works for each user. The app collaborates with renowned scientific, spiritual and cultural leaders to build their wisdom into guided audio experiences",
     "productTeam": [
       "1 backend developer",
@@ -175,6 +133,57 @@
       "Ritual started working with RPS in August 2019 and has built a strong integrated partnership. The combined team continues to work together on new feature development to continue to create a deeper well being experience, grow the user base, and expand the expert community. In addition to software development, RPS is heavily involved in improving feedback tools and methodologies to engage users and create the best possible experience."
     ],
     "businessImpactText": "Ritual raised a seed round led by Tim Connors (Midas List #95) of PivotNorth Capital. The team is seeing consistent user growth, increased user engagement, and revenue growth via subscriptions."
+  },
+  {
+    "introImage": "/images/pictures/walkli-intro.svg",
+    "site": "walkli.com",
+    "url": "walkli",
+    "siteLink": "https://walkli.com/",
+    "logo": "/images/logo/products-logo/walkli-logo.svg",
+    "features": ["Travel", "Leisure", "Hospitalityz"],
+    "introText": "Walkli provides free walking routes for travelers exploring the world on foot in search of local, authentic travel experiences. Maps are crowdsourced from locals, travelers, and bloggers to meet a wide variety of interests from classical history to street art, from local dive bars to a city’s best Instagram spots.",
+    "productTeam": [
+      "1 Backend developer",
+      "1 Frontend developer",
+      "1 part-time Product Manager",
+      "1 UX/UI Designer"
+    ],
+    "fundingStage": [
+      "Friends & Family"
+    ],
+    "services": [
+      "Backend Development",
+      "Frontend Development",
+      "iOS Development",
+      "API Development",
+      "Product Management",
+      "UX/UI Design",
+      "QA Automation",
+      "Technical Architecture",
+      "Venture Strategy"
+    ],
+    "techologies": [
+      "/images/logo/tools/php.svg", 
+      "Laravel", 
+      "MongoDB", 
+      "/images/logo/tools/aws.svg", 
+      "/images/logo/tools/terraform.svg", 
+      "/images/logo/tools/react.svg"
+    ],
+    "testimonials": {
+      "avatar": "/images/avatars/walkli-ceo-avatar.png",
+      "name": "Jeff Peo",
+      "position": "Founder & CEO",
+      "comment": "\"I met with a number of development options – both on- and off-shore – before choosing to work with RPS.  What set them apart was their drive to understand my business and to help determine which features should be built out for the MVP vs. future releases.  This has really enabled me to accurately match my strategic planning with our technical development.\""
+    },
+    "challengeText": "Walkli did not raise pre-seed funding and was bootstrapped by its Founder. RPS needed to deliver a functional application within a limited budget and timeframe to allow walkli to prove its product/market fit and raise funding.",
+    "solutionsTexst": "After product roadmapping, feature scoping, and sizing, RPS and walkli agreed on the parameters and deliverables for the first release. RPS’ Product Manager led one week sprints to gauge team development velocity, before switching to two week sprints. \n Key Features & Integrations: google Maps API customization for custom map creation, admin system with CMS, rich content creation and viewing interfaces, city search functionality, user profiles, social media sharing",
+    "results": [
+      "- RPS released the first version of the web app after 3 months.",
+      "- Walkli has retained RPS for continued iteration and feature development since March 2016.",
+      "- Future development plans include the release of a mobile app using the web app’s framework."
+    ],
+    "businessImpactText": "After the launch of the MVP web app, walkli successfully raised a Friends & Family round. In addition to user growth, walkli successfully launched a travel blogger content partnership program. They secured numerous travel and hospitality clients, including Westin Hotels, Hostelling international, the Amsterdam tourism board, and Croatia tourism board. Walkli was selected as a MassChallenge 2018 finalist."
   },
   {
     "introImage": "/images/pictures/mbamission-picture.png",
@@ -223,9 +232,7 @@
     "url": "taproom",
     "siteLink": "https://www.taproom.app",
     "logo": "/images/logo/products-logo/TapRoom-logo.svg",
-    "features": [
-      "Social Media"
-    ],
+    "features": ["Social Media", "Video Chat", "Community"],
     "introText": "TapRoom is a mobile app that allows users to videochat in digital versions of real world venues and bars. Users can network, hang out, or learn something in a digital home for their real-world community.",
     "productTeam": [
       "1 full-stack developer",

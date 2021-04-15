@@ -7,9 +7,10 @@ import {invesmentTexts} from "../../resources/texts";
 const InvestmentItem = () => {
     return (
         invesmentTexts.map((item, index, i) => (
-            <Col md={12} lg={6} className="pb-4" key={item.title + index}>
+            <Col md={12} lg={5} className="pb-4" key={item.title + index}>
                 <Row className="mb-4">
-                    <Col className="investHeading d-flex align-items-center col-8">
+                    <Col className={item.title.length > 24 ? "investHeading d-flex align-items-center col-8" : "investHeading d-flex align-items-center col-6"}>
+
                         {item.title.toUpperCase()}
                     </Col>
                 </Row>
@@ -55,7 +56,7 @@ const InvestmentPageContent = () => {
             </Container>
             <div className="goalsBg">
                 <Container>
-                    <Row className="goals pt-5 pb-3">
+                    <Row className="goals pt-5 pb-3 d-flex justify-content-space-around">
                         <InvestmentItem/>
                     </Row>
                 </Container>

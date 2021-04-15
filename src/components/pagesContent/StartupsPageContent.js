@@ -7,12 +7,12 @@ import {startupsTexts} from "../../resources/texts";
 const StartupItem = () => {
     return (
         startupsTexts.map((item, index) => (
-            <Col md={12} lg={6} className="pb-5" key={index}>
+            <Col md={12} lg={5} className="pb-5" key={index}>
                 <Row className="mb-4">
                     <Col className="col-2 col d-flex justify-content-center">
                         <Image src={item.image} fluid/>
                     </Col>
-                    <Col className="goalHeading d-flex align-items-center col-7">
+                    <Col className={item.title.length > 26 ? "investHeading d-flex align-items-center col-9" : "investHeading d-flex align-items-center col-7"}>
                         {item.title.toUpperCase()}
                     </Col>
                 </Row>
@@ -20,10 +20,10 @@ const StartupItem = () => {
                     <Col className="goalName col-3">
                         {item.name.toUpperCase()}
                     </Col>
-                    <Col className="lineBlue col-8"/>
+                    <Col className="lineBlue col-9"/>
                 </Row>
                 <Row>
-                    <Col className="pt-3">
+                    <Col className="pt-3 pr-0">
                         {item.body}
                     </Col>
                 </Row>
@@ -65,6 +65,17 @@ const StartupsPageContent = () => {
                     </Col>
                     <Col lg={{order: 'second'}} xs={{order: 'first'}} md={6}>
                         <Image src={startupsIcons.startupsPictureTwo} fluid/>
+                    </Col>
+                </Row>
+                <Row className="pt-5 mb-5 d-flex align-items-center">
+                    <Col md={6}>
+                        <Image src={startupsIcons.startupsPictureThree} fluid/>
+                    </Col>
+                    <Col xs={12} md={5} className="introText display-2">
+                    Remedy is best known for our work in the health, wellness, fitness, and sports industries.
+                     We have also executed successful engagements in fintech, insuretech, govtech, travel & leisure, 
+                     social media, and digital media. We have expertise in handling sensitive data, including PII and PHI, 
+                     and subscribe to advanced practices for dev ops and data compliance, including HIPAA.
                     </Col>
                 </Row>
             </Container>
