@@ -5,23 +5,27 @@ import {featuresList} from "../components/pagesContent/CompanyInfo";
 import "../styles/projectPage.css"
 
 function simpleList(textArray) {
-    return <ul className="list-group" style={{listStyleType: "none"}}>
-        {textArray.map((elem, index) => {
-            return <li className="=text-justify" key={index} style={{fontSize: 14}} >{elem}</li>
-        })}
-    </ul>
+    if (textArray) {
+        return <ul className="list-group" style={{listStyleType: "none"}}>
+            {textArray.map((elem, index) => {
+                return <li className="=text-justify" key={index} style={{fontSize: 14}}>{elem}</li>
+            })}
+        </ul>
+    }
 }
 
 function iconsList(techologies) {
-    return (
-        <ul style={{listStyleType: "none"}} className="d-flex align-items-center flex-wrap pl-0">
-            {techologies.map((elem, index) => (
-                <li className="mr-3" key={index}>
-                    <Image src={elem} fluid/>
-                </li>
-            ))}
-        </ul>
-    )
+    if (techologies) {
+        return (
+            <ul style={{listStyleType: "none"}} className="d-flex align-items-center flex-wrap pl-0">
+                {techologies.map((elem, index) => (
+                    <li className="mr-3" key={index}>
+                        <Image src={elem} fluid/>
+                    </li>
+                ))}
+            </ul>
+        )
+    }
 }
 
 const ProjectPageTemplate = ({data}) => {
@@ -41,14 +45,16 @@ const ProjectPageTemplate = ({data}) => {
                 <Row lg={10} className="d-flex flex-wrap justify-content-lg-between justify-content-center">
                     <Col lg={3} md={12} className="mt-3">
                         <div><Image src={data.logo} width={150}/></div>
-                        <div className="d-flex flex-wrap mt-3">{featuresList(data.features)}</div>
+                        <div
+                            className="d-flex flex-wrap mt-3">{data.features && featuresList(data.features)}</div>
                         <p className="introProductText mt-4">{data.introText}</p>
                         {data.testimonials &&
                         <>
                             <h6 className="mt-5 mb-3 fontBold">Testimonials</h6>
                             <Row
                                 className="mb-3 container d-flex flex-nowrap justify-content-start align-content-center">
-                                <div className="d-flex justify-content-center align-items-center"><Image src={data.testimonials.avatar} width={50}/></div>
+                                <div className="d-flex justify-content-center align-items-center"><Image
+                                    src={data.testimonials.avatar} width={50}/></div>
                                 <div className="d-flex flex-wrap justify-content-start mt-2 ml-3">
                                     <span className="ceoName">{data.testimonials.name}</span>
                                     <span className="ceoPosition">{data.testimonials.position}</span>
@@ -65,7 +71,7 @@ const ProjectPageTemplate = ({data}) => {
                         <p className="infoText text-justify">{data.solutionsTexst}</p>
                         <h4 className="mt-4 mb-3">Results</h4>
                         <ul className="list-group" style={{listStyleType: "none"}}>
-                            {data.results.map((elem, index) => {
+                            {data.results && data.results.map((elem, index) => {
                                 return <li key={index} className="text-justify">{elem}</li>
                             })}
                         </ul>
