@@ -123,6 +123,41 @@ export const projectsInfo = {
         name: 'Classpass',
         image: productsPictures.classpassInfo,
         info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    gradGab: {
+        name: 'GradGab',
+        image: productsPictures.classpassInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    }, 
+    zeamo: {
+        name: 'Zeamo',
+        image: productsPictures.vendInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    ritual: {
+        name: 'Ritual',
+        image: productsPictures.classpassInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    mbaMission: {
+        name: 'MbaMission',
+        image: productsPictures.classpassInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    walkli: {
+        name: 'Walkli',
+        image: productsPictures.vendInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    onePlayce: {
+        name: 'OnePlayce',
+        image: productsPictures.vendInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
+    },
+    healthReveal: {
+        name: 'Health Reveal',
+        image: productsPictures.classpassInfo,
+        info: 'ClassPass is a monthly fitness membership that lets you work out at over 7,000 of the best.'
     }
 }
 
@@ -140,7 +175,7 @@ export const employeesInfo = [
         interests: ['Product Development', 'Risk Management', 'Board and Computer Games', 'Sports Mafia', 'Snowboarding'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'E-commerce', 'Education', 'Finance'],
-        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass,]
+        projects: [projectsInfo.vend, projectsInfo.gradGab]
     },
     {
         id: 2,
@@ -193,7 +228,7 @@ export const employeesInfo = [
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Back-end & DevOps engineering', 'SaaS solutions', 'Processes automatization',
             'Private CRM tools'],
-        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.vend],
+        projects: [projectsInfo.onePlayce, projectsInfo.zeamo, projectsInfo.mbaMission],
         tools: [toolsLogo.firebaseLogo, toolsLogo.kotlinLogo, toolsLogo.reactLogo, toolsLogo.html5Logo,
             toolsLogo.phpLogo, toolsLogo.androidLogo, toolsLogo.iosLogo]
     },
@@ -209,7 +244,8 @@ export const employeesInfo = [
         interests: ['Analytics and SEO', 'Rafting', 'Eurotrips', 'Books & Movies'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Healthcare', 'Wellness', 'Data & Analytics', 'Education', 'Fitness'],
-        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass, projectsInfo.vend, projectsInfo.vend],
+        projects: [projectsInfo.zeamo, projectsInfo.ritual, projectsInfo.mbaMission, projectsInfo.walkli,
+            projectsInfo.onePlayce],
     },
     {
         id: 6,
@@ -224,7 +260,7 @@ export const employeesInfo = [
         interests: ['Software development', 'Christianity', 'Quantum mechanics', 'Movie comics'],
         methodologies: 'Agile, Waterfall, Kanban',
         expertise: ['Backend development', 'DevOps', 'Software Architecture'],
-        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass],
+        projects: [projectsInfo.zeamo, projectsInfo.gradGab, projectsInfo.healthReveal],
     },
 ]
 

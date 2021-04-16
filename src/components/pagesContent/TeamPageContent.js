@@ -116,7 +116,7 @@ const TeamPageContent = () => {
                                 <Row>
                                     {currentEmployee.projects.map((elem, i) => {
                                         if (windowSize) {
-                                            return <Card className='ml-3 projectCard mt-3' style={{width: '10.5rem'}} key={i}>
+                                            return <Card className='ml-4 projectCard mt-3' style={{width: '10.5rem'}} key={i}>
                                                 <Card.Img variant="top" src={elem.image}/>
                                                 <Col>
                                                     <h6 className='mt-2'>{elem.name}</h6>
