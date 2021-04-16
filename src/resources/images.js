@@ -72,6 +72,8 @@ import zaytsevIcon from '../../static/images/avatars/employees/SergeyZaytsev.svg
 import zaytsevPhoto from '../../static/images/photos/SergeyZaytsev.png';
 import kuzmichIcon from '../../static/images/avatars/employees/SergeyKuzmich.svg';
 import kuzmichPhoto from '../../static/images/photos/SergeyKuzmich.png';
+import protasenyaIcon from '../../static/images/avatars/employees/AlexanderProtasenya.svg';
+import protasenyaPhoto from '../../static/images/photos/AlexanderProtasenya.png';
 
 import androidLogo from '../../static/images/logo/tools/android.svg'
 import angularLogo from '../../static/images/logo/tools/angular.svg'
@@ -177,7 +179,9 @@ export const employeesImages = {
     kuzmichIcon,
     kuzmichPhoto,
     zaytsevIcon,
-    zaytsevPhoto
+    zaytsevPhoto,
+    protasenyaIcon,
+    protasenyaPhoto
 }
 
 export const toolsLogo = {

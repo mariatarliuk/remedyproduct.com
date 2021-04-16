@@ -211,5 +211,20 @@ export const employeesInfo = [
         expertise: ['Healthcare', 'Wellness', 'Data & Analytics', 'Education', 'Fitness'],
         projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass, projectsInfo.vend, projectsInfo.vend],
     },
+    {
+        id: 6,
+        name: 'Alexander Protasenya',
+        photo: employeesImages.protasenyaPhoto,
+        avatar: employeesImages.protasenyaIcon,
+        position: 'Technical Team Lead',
+        intro: 'Solid experience in developing Python, SQL and JavaScript app services.' +
+                'Extensive experience with version control systems (Git/SVN). Experience with integrating ' +
+                'common third-party APIs. DevOps expertise using AWS, Docker Swarm, Kubernetes, Travis, ' +
+                'GitlabCI, Github Actions.',
+        interests: ['Software development', 'Christianity', 'Quantum mechanics', 'Movie comics'],
+        methodologies: 'Agile, Waterfall, Kanban',
+        expertise: ['Backend development', 'DevOps', 'Software Architecture'],
+        projects: [projectsInfo.vend, projectsInfo.classpass, projectsInfo.classpass],
+    },
 ]
 
